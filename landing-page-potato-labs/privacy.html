@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Potato Labs</title>
+  <meta name="description" content="Privacy Policy for Potato Labs, a text-to-speech app for Mac.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #0b0e17;
+      --surface:      #111520;
+      --surface-2:    #161b28;
+      --border:       #1d2335;
+      --text:         #e4e8f0;
+      --muted:        #5b6478;
+      --accent:       #3d7eff;
+      --accent-dim:   rgba(61, 126, 255, 0.12);
+      --accent-ring:  rgba(61, 126, 255, 0.25);
+    }
+
+    html { scroll-behavior: smooth; }
+    ::selection { background: rgba(61, 126, 255, 0.25); color: #fff; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── Animations ──────────────────────────── */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .anim-fade-in { animation: fadeIn 0.4s ease forwards; }
+    .anim-fade-up { opacity: 0; animation: fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .delay-1 { animation-delay: 0.05s; }
+    .delay-2 { animation-delay: 0.12s; }
+    .delay-3 { animation-delay: 0.2s; }
+
+    /* ── Nav ─────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 14, 23, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      transition: opacity 0.15s;
+    }
+
+    .nav-brand:hover { opacity: 0.8; }
+
+    .nav-brand img {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+    }
+
+    .nav-back {
+      color: var(--muted);
+      font-size: 0.83rem;
+      text-decoration: none;
+      transition: color 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .nav-back:hover { color: var(--text); }
+
+    /* ── Main ────────────────────────────────── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 6rem;
+    }
+
+    .page-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 0.5rem;
+    }
+
+    .last-updated {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 0.65rem;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 1em;
+      border-radius: 2px;
+      background: var(--accent);
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
+    p {
+      font-size: 0.92rem;
+      color: #8d97ad;
+      margin-bottom: 1rem;
+      line-height: 1.75;
+    }
+
+    ul {
+      font-size: 0.92rem;
+      color: #8d97ad;
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+      line-height: 1.75;
+    }
+
+    ul li { margin-bottom: 0.45rem; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Footer ──────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 640px) {
+      main { padding: 3rem 1.25rem 5rem; }
+      .nav-inner { padding: 0.85rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="anim-fade-in">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <picture>
+        <source srcset="assets/icon.webp" type="image/webp">
+        <img src="assets/icon-128.png" alt="Potato Labs" width="64" height="64">
+      </picture>
+      Potato Labs
+    </a>
+    <a class="nav-back" href="../index.html">← BigHippo Labs</a>
+  </div>
+</nav>
+
+<main>
+  <p class="page-label anim-fade-up delay-1">Legal</p>
+  <h1 class="anim-fade-up delay-2">Privacy Policy</h1>
+  <p class="last-updated anim-fade-up delay-3">Last updated: March 1, 2026</p>
+
+  <div class="anim-fade-up delay-3">
+    <h2>Overview</h2>
+    <p>Potato Labs is a text-to-speech app that runs entirely on your Mac. We do not collect, transmit, or store any personal data. Everything you do in the app stays on your device.</p>
+
+    <h2>Data We Do Not Collect</h2>
+    <ul>
+      <li>We do not collect your name, email address, or any contact information.</li>
+      <li>We do not collect the text you enter or convert to speech.</li>
+      <li>We do not collect voice recordings or voice cloning data.</li>
+      <li>We do not use analytics, crash reporting, or telemetry of any kind.</li>
+      <li>We do not have servers — there is no backend to send data to.</li>
+    </ul>
+
+    <h2>On-Device Processing</h2>
+    <p>All text-to-speech generation, voice cloning, and document processing happens locally on your Mac using models bundled with the app. No internet connection is required or used during normal operation.</p>
+
+    <h2>Files You Import</h2>
+    <p>When you import a document (PDF, EPUB, TXT, Markdown) or an audio file for voice cloning, those files are read locally on your device. They are never uploaded, transmitted, or shared.</p>
+
+    <h2>App Store &amp; Subscriptions</h2>
+    <p>If you purchase a subscription, the transaction is handled entirely by Apple through the App Store. We receive only the information Apple provides to confirm your purchase status. We do not have access to your payment details.</p>
+    <p>For information on how Apple handles your data, see <a href="https://www.apple.com/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Potato Labs does not knowingly collect any information from children under 13. As the app collects no data from anyone, it is safe for all ages.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we make material changes to this policy, we will update the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, contact us at <a href="mailto:potatolabs.team@gmail.com">potatolabs.team@gmail.com</a>.</p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Potato Labs &mdash;
+  <a href="privacy.html">Privacy Policy</a> &middot;
+  <a href="terms.html">Terms of Use</a> &middot;
+  <a href="support.html">Support</a>
+</footer>
+
+</body>
+</html>

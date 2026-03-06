@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — Potato Labs</title>
+  <meta name="description" content="Terms of Use for Potato Labs, a text-to-speech app for Mac.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #0b0e17;
+      --surface:      #111520;
+      --surface-2:    #161b28;
+      --border:       #1d2335;
+      --text:         #e4e8f0;
+      --muted:        #5b6478;
+      --accent:       #3d7eff;
+      --accent-dim:   rgba(61, 126, 255, 0.12);
+      --accent-ring:  rgba(61, 126, 255, 0.25);
+    }
+
+    html { scroll-behavior: smooth; }
+    ::selection { background: rgba(61, 126, 255, 0.25); color: #fff; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── Animations ──────────────────────────── */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .anim-fade-in { animation: fadeIn 0.4s ease forwards; }
+    .anim-fade-up { opacity: 0; animation: fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .delay-1 { animation-delay: 0.05s; }
+    .delay-2 { animation-delay: 0.12s; }
+    .delay-3 { animation-delay: 0.2s; }
+
+    /* ── Nav ─────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 14, 23, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      transition: opacity 0.15s;
+    }
+
+    .nav-brand:hover { opacity: 0.8; }
+
+    .nav-brand img {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+    }
+
+    .nav-back {
+      color: var(--muted);
+      font-size: 0.83rem;
+      text-decoration: none;
+      transition: color 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .nav-back:hover { color: var(--text); }
+
+    /* ── Main ────────────────────────────────── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 6rem;
+    }
+
+    .page-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 0.5rem;
+    }
+
+    .last-updated {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 0.65rem;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 1em;
+      border-radius: 2px;
+      background: var(--accent);
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
+    p {
+      font-size: 0.92rem;
+      color: #8d97ad;
+      margin-bottom: 1rem;
+      line-height: 1.75;
+    }
+
+    ul {
+      font-size: 0.92rem;
+      color: #8d97ad;
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+      line-height: 1.75;
+    }
+
+    ul li { margin-bottom: 0.45rem; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Footer ──────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 640px) {
+      main { padding: 3rem 1.25rem 5rem; }
+      .nav-inner { padding: 0.85rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="anim-fade-in">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <picture>
+        <source srcset="assets/icon.webp" type="image/webp">
+        <img src="assets/icon-128.png" alt="Potato Labs" width="64" height="64">
+      </picture>
+      Potato Labs
+    </a>
+    <a class="nav-back" href="../index.html">← BigHippo Labs</a>
+  </div>
+</nav>
+
+<main>
+  <p class="page-label anim-fade-up delay-1">Legal</p>
+  <h1 class="anim-fade-up delay-2">Terms of Use</h1>
+  <p class="last-updated anim-fade-up delay-3">Last updated: March 1, 2026</p>
+
+  <div class="anim-fade-up delay-3">
+    <h2>Agreement</h2>
+    <p>By downloading or using Potato Labs ("the App"), you agree to these Terms of Use. If you do not agree, do not use the App.</p>
+
+    <h2>License</h2>
+    <p>Potato Labs grants you a personal, non-exclusive, non-transferable license to use the App on Apple devices you own or control, subject to these terms and the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple End User License Agreement (EULA)</a>, which is incorporated here by reference.</p>
+
+    <h2>Permitted Use</h2>
+    <ul>
+      <li>You may use the App for personal, educational, or professional purposes.</li>
+      <li>You may generate speech from text you own or have the right to use.</li>
+      <li>You may use voice cloning only with your own voice or voices you have explicit permission to clone.</li>
+    </ul>
+
+    <h2>Prohibited Use</h2>
+    <ul>
+      <li>You may not clone someone else's voice without their explicit consent.</li>
+      <li>You may not use the App to create deceptive, fraudulent, or harmful content.</li>
+      <li>You may not reverse-engineer, decompile, or modify the App.</li>
+      <li>You may not use the App to impersonate others or spread misinformation.</li>
+    </ul>
+
+    <h2>Subscriptions</h2>
+    <p>If the App offers an auto-renewable subscription:</p>
+    <ul>
+      <li>Subscriptions are billed through your Apple ID via the App Store.</li>
+      <li>Your subscription automatically renews unless cancelled at least 24 hours before the end of the current period.</li>
+      <li>You can manage or cancel your subscription in your Apple ID account settings at any time.</li>
+      <li>Free trial periods (if offered) convert to a paid subscription at the end of the trial unless cancelled beforehand.</li>
+      <li>No refunds are provided for partial subscription periods, except where required by law.</li>
+    </ul>
+
+    <h2>Intellectual Property</h2>
+    <p>The App, including its models, code, design, and bundled voices, is owned by Potato Labs and protected by applicable intellectual property laws. Nothing in these terms transfers ownership to you.</p>
+
+    <h2>Disclaimer of Warranties</h2>
+    <p>The App is provided "as is" without warranties of any kind, express or implied. We do not guarantee the App will be error-free, uninterrupted, or suitable for any particular purpose.</p>
+
+    <h2>Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, Potato Labs is not liable for any indirect, incidental, special, or consequential damages arising from your use of the App.</p>
+
+    <h2>Changes</h2>
+    <p>We may update these terms from time to time. Continued use of the App after changes are posted constitutes your acceptance of the updated terms.</p>
+
+    <h2>Governing Law</h2>
+    <p>These terms are governed by the laws of the jurisdiction in which Potato Labs operates, without regard to conflict-of-law principles.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about these terms, contact us at <a href="mailto:potatolabs.team@gmail.com">potatolabs.team@gmail.com</a>.</p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Potato Labs &mdash;
+  <a href="privacy.html">Privacy Policy</a> &middot;
+  <a href="terms.html">Terms of Use</a> &middot;
+  <a href="support.html">Support</a>
+</footer>
+
+</body>
+</html>

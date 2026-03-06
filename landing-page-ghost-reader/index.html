@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghost Reader — Offline AI Narrator</title>
+  <meta name="description" content="Turn any document into lifelike audio. Offline. Unlimited. Ghost Reader uses on-device AI to narrate PDFs, EPUBs, web articles, and more — nothing leaves your phone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #080807;
+      --surface: #111110;
+      --border:  #222220;
+      --amber:   #F97316;
+      --amber2:  #FBBF24;
+      --text:    #F5F5F0;
+      --muted:   #999992;
+      --radius:  16px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 19px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 4px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      background: rgba(8,8,7,0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      width: 108px;
+      height: 108px;
+      border-radius: 24px;
+      flex-shrink: 0;
+    }
+    .nav-logo span {
+      background: linear-gradient(90deg, var(--amber), var(--amber2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 22px;
+      background: linear-gradient(135deg, var(--amber), var(--amber2));
+      color: #000;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 100px;
+      transition: opacity 0.15s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* ── PAGE LOAD FADE-IN ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── HERO ── */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 48px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 132px 48px 48px;
+    }
+
+    .hero-text { display: flex; flex-direction: column; }
+
+    .hero-eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 5vw, 68px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.07;
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, var(--amber), var(--amber2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-sub {
+      font-size: clamp(17px, 2vw, 20px);
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, var(--amber), var(--amber2));
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 100px;
+      transition: opacity 0.15s, transform 0.15s;
+    }
+    .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    .hero-badges {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 14px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--amber);
+      flex-shrink: 0;
+    }
+
+    /* Hero phone */
+    .hero-phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .hero-phone::before {
+      content: "";
+      position: absolute;
+      inset: -60px;
+      background: radial-gradient(circle at 50% 50%, rgba(249,115,22,0.10) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-phone img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 44px;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.07),
+        0 40px 100px rgba(0,0,0,0.7),
+        0 8px 32px rgba(249,115,22,0.10);
+      display: block;
+      position: relative;
+    }
+
+    /* ── SCREENSHOTS ── */
+    .screenshots {
+      padding: 32px 24px 56px;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .phone-frame { width: 240px; flex-shrink: 0; }
+    .phone-frame img {
+      width: 100%;
+      border-radius: 36px;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.06),
+        0 24px 64px rgba(0,0,0,0.55);
+      display: block;
+    }
+    .phone-caption {
+      text-align: center;
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* ── FEATURES ── */
+    .features {
+      padding: 56px 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 36px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .feature-card {
+      background: var(--surface);
+      padding: 28px 24px;
+    }
+
+    .feature-icon {
+      font-size: 26px;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .feature-card h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .feature-card p {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* ── STRIP ── */
+    .strip-wrap {
+      padding: 0 24px;
+      max-width: 960px;
+      margin: 0 auto 56px;
+    }
+
+    .strip {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 48px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+
+    .strip h2 {
+      font-size: clamp(24px, 3.5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      max-width: 580px;
+    }
+    .strip h2 em {
+      font-style: normal;
+      background: linear-gradient(90deg, var(--amber), var(--amber2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .strip p {
+      color: var(--muted);
+      max-width: 480px;
+      font-size: 17px;
+    }
+
+    /* ── FORMATS ── */
+    .formats {
+      padding: 0 24px 56px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .formats-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 28px;
+    }
+
+    .format-pill {
+      padding: 10px 20px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 15px;
+      color: var(--muted);
+      background: var(--surface);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--text); }
+
+    .nav-back {
+      position: absolute;
+      left: 40px;
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav-back:hover { color: var(--text); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 132px 24px 40px;
+        gap: 36px;
+      }
+
+      .hero-phone { order: -1; }
+      .hero-phone img { max-width: 220px; }
+
+      .hero-actions { justify-content: center; }
+      .hero-badges  { justify-content: center; }
+
+      .strip { padding: 32px 24px; }
+      .phone-frame { width: 180px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-back">← BigHippo Labs</a>
+    <div class="nav-logo">
+      <picture>
+        <source srcset="screenshots/icon.webp" type="image/webp" />
+        <img src="screenshots/icon.png" alt="Ghost Reader icon" />
+      </picture>
+      Ghost<span>Reader</span>
+    </div>
+    <a href="#download" class="nav-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      App Store
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text" style="animation: fadeUp 0.7s ease-out both;">
+      <p class="hero-eyebrow">No account · No internet needed</p>
+      <h1>Your documents,<br /><em>read aloud.</em></h1>
+      <p class="hero-sub">
+        Ghost Reader turns PDFs, EPUBs, web articles, and text files into
+        natural-sounding audio — entirely on your device. Nothing sent anywhere.
+      </p>
+      <div class="hero-actions">
+        <a href="#download" class="btn-primary" id="download">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download on App Store
+        </a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge"><span class="badge-dot"></span>100% offline</span>
+        <span class="badge"><span class="badge-dot"></span>Unlimited</span>
+        <span class="badge"><span class="badge-dot"></span>Zero tracking</span>
+      </div>
+    </div>
+
+    <div class="hero-phone" style="animation: fadeUp 0.7s 0.15s ease-out both;">
+      <picture>
+        <source srcset="screenshots/main.webp" type="image/webp" />
+        <img src="screenshots/main.png" alt="Ghost Reader home screen" loading="eager" />
+      </picture>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="screenshots">
+    <div class="phone-frame" data-aos="fade-up" data-aos-delay="0">
+      <picture>
+        <source srcset="screenshots/preparing.webp" type="image/webp" />
+        <img src="screenshots/preparing.png" alt="Voice selection screen" loading="lazy" />
+      </picture>
+      <p class="phone-caption">Pick your voice</p>
+    </div>
+    <div class="phone-frame" data-aos="fade-up" data-aos-delay="100">
+      <picture>
+        <source srcset="screenshots/reading.webp" type="image/webp" />
+        <img src="screenshots/reading.png" alt="Narration in progress" loading="lazy" />
+      </picture>
+      <p class="phone-caption">Follow along</p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <p class="section-label" data-aos="fade-up">Why Ghost Reader</p>
+    <div class="features-grid">
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+        <span class="feature-icon">📵</span>
+        <h3>Fully offline</h3>
+        <p>The AI model runs entirely on your iPhone. No Wi-Fi, no cellular, no cloud. Works on a plane, in a tunnel, anywhere.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="60">
+        <span class="feature-icon">∞</span>
+        <h3>No limits</h3>
+        <p>No credits, no monthly caps. Listen to as many documents as you want for as long as you want.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="120">
+        <span class="feature-icon">🔒</span>
+        <h3>Completely private</h3>
+        <p>Your documents never leave your device. No analytics, no tracking, no account required. Ever.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+        <span class="feature-icon">🎙️</span>
+        <h3>Neural voices</h3>
+        <p>Multiple natural-sounding AI voices in English and Spanish. Cloud-quality narration, running fully on-device.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="60">
+        <span class="feature-icon">📖</span>
+        <h3>Any format</h3>
+        <p>PDF, EPUB, web articles, Markdown, plain text. Share from Safari, Files, or any other app.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="120">
+        <span class="feature-icon">🎧</span>
+        <h3>Plays everywhere</h3>
+        <p>Background audio, AirPlay, lock screen controls. Ghost Reader fits into how you already listen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip-wrap" data-aos="fade-up">
+    <div class="strip">
+      <h2>The <em>private</em> alternative to ElevenLabs Reader and Speechify</h2>
+      <p>
+        Cloud-based narration apps send your documents to remote servers.
+        Ghost Reader keeps everything local — same neural voice quality,
+        without anyone reading over your shoulder.
+      </p>
+      <a href="#download" class="btn-primary" style="margin-top:8px;">
+        Download on App Store
+      </a>
+    </div>
+  </div>
+
+  <!-- FORMATS -->
+  <section class="formats" data-aos="fade-up">
+    <p class="section-label">Supported formats</p>
+    <div class="formats-list">
+      <span class="format-pill">PDF</span>
+      <span class="format-pill">EPUB</span>
+      <span class="format-pill">Web articles</span>
+      <span class="format-pill">Markdown</span>
+      <span class="format-pill">Plain text</span>
+      <span class="format-pill">Paste a link</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p style="margin-bottom:8px;">
+      <strong style="color: var(--text);">Ghost Reader</strong>
+      &nbsp;·&nbsp;
+      iOS 18+
+    </p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a>
+      &nbsp;·&nbsp;
+      <a href="terms.html">Terms of Use</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:potatolabs.team@gmail.com">Support</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 600, easing: 'ease-out-quad' });
+  </script>
+</body>
+</html>

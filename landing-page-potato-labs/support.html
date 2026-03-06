@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Potato Labs</title>
+  <meta name="description" content="Get help with Potato Labs, the text-to-speech app for Mac.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #0b0e17;
+      --surface:      #111520;
+      --surface-2:    #161b28;
+      --border:       #1d2335;
+      --text:         #e4e8f0;
+      --muted:        #5b6478;
+      --accent:       #3d7eff;
+      --accent-dim:   rgba(61, 126, 255, 0.12);
+      --accent-ring:  rgba(61, 126, 255, 0.25);
+    }
+
+    html { scroll-behavior: smooth; }
+    ::selection { background: rgba(61, 126, 255, 0.25); color: #fff; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── Animations ──────────────────────────── */
+    @keyframes fadeIn  { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeUp  {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .anim-fade-in  { animation: fadeIn 0.4s ease forwards; }
+    .anim-fade-up  { opacity: 0; animation: fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .delay-1 { animation-delay: 0.05s; }
+    .delay-2 { animation-delay: 0.12s; }
+    .delay-3 { animation-delay: 0.2s; }
+    .delay-4 { animation-delay: 0.28s; }
+    .delay-5 { animation-delay: 0.36s; }
+
+    /* ── Nav ─────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 14, 23, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      transition: opacity 0.15s;
+    }
+
+    .nav-brand:hover { opacity: 0.8; }
+
+    .nav-brand img {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+    }
+
+    .nav-back {
+      color: var(--muted);
+      font-size: 0.83rem;
+      text-decoration: none;
+      transition: color 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .nav-back:hover { color: var(--text); }
+
+    /* ── Main ────────────────────────────────── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 6rem;
+    }
+
+    .page-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 0.6rem;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.7;
+    }
+
+    /* ── Contact card ────────────────────────── */
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 3rem;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+
+    .contact-card:hover {
+      border-color: var(--accent-ring);
+      background: var(--surface-2);
+      box-shadow: 0 8px 32px rgba(61, 126, 255, 0.1);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-ring);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .contact-card:hover .contact-icon {
+      background: rgba(61, 126, 255, 0.2);
+      border-color: rgba(61, 126, 255, 0.4);
+    }
+
+    .contact-info { flex: 1; }
+
+    .contact-info strong {
+      display: block;
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-info span {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .contact-arrow {
+      font-size: 0.95rem;
+      color: var(--muted);
+      transition: color 0.15s, transform 0.2s;
+    }
+
+    .contact-card:hover .contact-arrow {
+      color: var(--accent);
+      transform: translateX(3px);
+    }
+
+    .response-note {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: -2rem;
+      margin-bottom: 3rem;
+      padding-left: 0.25rem;
+    }
+
+    /* ── FAQ sections ────────────────────────── */
+    .faq-section {
+      margin-top: 0;
+    }
+
+    .faq-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .faq-item {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-q {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .faq-a {
+      font-size: 0.88rem;
+      color: #8d97ad;
+      line-height: 1.7;
+    }
+
+    .faq-a a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .faq-a a:hover { text-decoration: underline; }
+
+    /* ── Footer ──────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 640px) {
+      main { padding: 3rem 1.25rem 5rem; }
+      .nav-inner { padding: 0.85rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="anim-fade-in">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <picture>
+        <source srcset="assets/icon.webp" type="image/webp">
+        <img src="assets/icon-128.png" alt="Potato Labs" width="64" height="64">
+      </picture>
+      Potato Labs
+    </a>
+    <a class="nav-back" href="../index.html">← BigHippo Labs</a>
+  </div>
+</nav>
+
+<main>
+  <p class="page-label anim-fade-up delay-1">Help</p>
+  <h1 class="anim-fade-up delay-2">Support</h1>
+  <p class="subtitle anim-fade-up delay-3">We're here to help. Reach out anytime and we'll get back to you as soon as possible.</p>
+
+  <!-- Contact card — top -->
+  <a class="contact-card anim-fade-up delay-3" href="mailto:potatolabs.team@gmail.com">
+    <div class="contact-icon">✉️</div>
+    <div class="contact-info">
+      <strong>Email Support</strong>
+      <span>potatolabs.team@gmail.com</span>
+    </div>
+    <span class="contact-arrow">→</span>
+  </a>
+
+  <p class="response-note anim-fade-up delay-4">We respond within 1–2 business days.</p>
+
+  <!-- FAQ -->
+  <div class="faq-section anim-fade-up delay-4">
+    <p class="faq-eyebrow">Common Questions</p>
+
+    <div class="faq-item">
+      <p class="faq-q">The app isn't generating audio</p>
+      <p class="faq-a">Make sure the model has finished loading — a spinner appears in the toolbar while it loads on first launch. If it seems stuck, try quitting and relaunching the app.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Voice cloning isn't working</p>
+      <p class="faq-a">For best results, use a clean audio sample between 5–30 seconds with a single speaker and minimal background noise. Supported formats: WAV, MP3, M4A, FLAC, OGG.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">The app is slow on my Mac</p>
+      <p class="faq-a">Potato Labs runs entirely on your CPU. Generation speed depends on your Mac model and the length of your text. Apple Silicon Macs (M1 and later) perform significantly faster than Intel Macs.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">How do I cancel my subscription?</p>
+      <p class="faq-a">Subscriptions are managed entirely through the App Store. Open <strong>System Settings → Apple ID → Subscriptions</strong> to manage or cancel your subscription at any time.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Can I use Potato Labs offline?</p>
+      <p class="faq-a">Yes — completely. All models are bundled with the app and run locally on your Mac. No internet connection is ever required or used.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Potato Labs &mdash;
+  <a href="privacy.html">Privacy Policy</a> &middot;
+  <a href="terms.html">Terms of Use</a> &middot;
+  <a href="support.html">Support</a>
+</footer>
+
+</body>
+</html>

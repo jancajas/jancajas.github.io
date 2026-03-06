@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Ghost Reader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #080807;
+      --surface: #111110;
+      --border:  #222220;
+      --amber:   #F97316;
+      --amber2:  #FBBF24;
+      --text:    #F5F5F0;
+      --muted:   #999992;
+      --radius:  16px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--amber); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 4px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      position: relative;
+      background: rgba(8,8,7,0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-logo img {
+      width: 108px;
+      height: 108px;
+      border-radius: 24px;
+      flex-shrink: 0;
+    }
+    .nav-logo span {
+      background: linear-gradient(90deg, var(--amber), var(--amber2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 22px;
+      background: linear-gradient(135deg, var(--amber), var(--amber2));
+      color: #000;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    .nav-back {
+      position: absolute;
+      left: 40px;
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav-back:hover { color: var(--text); }
+
+    /* ── PAGE LOAD FADE-IN ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── HERO ── */
+    .page-hero {
+      position: relative;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 140px 40px 56px;
+      overflow: hidden;
+      animation: fadeUp 0.7s ease-out both;
+    }
+
+    .page-hero::before {
+      content: "";
+      position: absolute;
+      top: 80px; left: -80px;
+      width: 500px; height: 300px;
+      background: radial-gradient(ellipse at 30% 50%, rgba(249,115,22,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .page-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 14px;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .updated {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* ── DIVIDER ── */
+    .hero-rule {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .hero-rule hr {
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── CONTENT ── */
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+    }
+
+    .highlight {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--amber);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 32px 0 40px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.65;
+      box-shadow: 0 0 32px rgba(249,115,22,0.05);
+    }
+
+    .section { margin-top: 40px; }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--amber);
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    ul {
+      color: var(--muted);
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+    li { margin-bottom: 8px; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      nav { padding: 14px 20px; }
+      .page-hero { padding: 120px 24px 40px; }
+      .hero-rule { padding: 0 24px; }
+      .page { padding: 0 24px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-back">← BigHippo Labs</a>
+    <a href="index.html" class="nav-logo">
+      <picture>
+        <source srcset="screenshots/icon.webp" type="image/webp" />
+        <img src="screenshots/icon.png" alt="Ghost Reader icon" />
+      </picture>
+      Ghost<span>Reader</span>
+    </a>
+    <a href="#" class="nav-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      App Store
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-hero">
+    <p class="page-eyebrow">Legal</p>
+    <h1>Terms of Use</h1>
+    <p class="updated">Last updated: March 2026</p>
+  </div>
+
+  <div class="hero-rule"><hr /></div>
+
+  <!-- CONTENT -->
+  <div class="page">
+
+    <div class="highlight" data-aos="fade-up" data-aos-duration="600">
+      By downloading or using Ghost Reader, you agree to these terms. Please read them — they're short and written in plain language.
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>About Ghost Reader</h2>
+      <p>Ghost Reader is an iOS application developed by Potato Labs that converts documents into spoken audio using an on-device AI text-to-speech engine. It supports PDFs, EPUBs, web articles, Markdown files, and plain text.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>Subscription</h2>
+      <p>Access to Ghost Reader requires an active subscription purchased through the App Store.</p>
+      <ul>
+        <li><strong>Free trial:</strong> New subscribers receive a 2-week free trial. The trial begins when you confirm the purchase through the App Store.</li>
+        <li><strong>Billing:</strong> After the trial period ends, your subscription renews monthly and payment is charged to your Apple ID.</li>
+        <li><strong>Auto-renewal:</strong> Your subscription automatically renews unless you cancel at least 24 hours before the end of the current billing period.</li>
+        <li><strong>Cancellation:</strong> You can cancel at any time in your iPhone's Settings → Apple ID → Subscriptions. Cancelling stops future charges; you retain access until the end of the paid period.</li>
+        <li><strong>Refunds:</strong> Refund requests are handled by Apple. We do not process refunds directly. Contact Apple Support or visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>.</li>
+      </ul>
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>Acceptable use</h2>
+      <p>Ghost Reader is licensed for personal, non-commercial use. You may use it to listen to documents you own or have the right to access. You may not:</p>
+      <ul>
+        <li>Use the app to reproduce or distribute copyrighted material without authorisation</li>
+        <li>Reverse-engineer, decompile, or attempt to extract the AI model or other proprietary components</li>
+        <li>Use the app in any way that violates applicable laws or regulations</li>
+      </ul>
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>Content you provide</h2>
+      <p>All documents and content you open in Ghost Reader are processed entirely on your device. You retain full ownership of your documents. We do not receive, store, or have access to anything you load into the app.</p>
+      <p>You are responsible for ensuring you have the right to use any content you load into Ghost Reader.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>Intellectual property</h2>
+      <p>Ghost Reader, its name, icon, design, and on-device AI model are the property of Potato Labs. The app is licensed to you, not sold. This licence does not transfer any ownership of the software or its components.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>Disclaimer of warranties</h2>
+      <p>Ghost Reader is provided "as is" without warranty of any kind. We do not guarantee that the app will be error-free, that narration quality will meet every expectation, or that the app will be available at all times. Your use is at your own risk.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>Limitation of liability</h2>
+      <p>To the fullest extent permitted by law, Potato Labs is not liable for any indirect, incidental, or consequential damages arising from your use of Ghost Reader. Our total liability for any claim is limited to the amount you paid for your current subscription period.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>Changes to the app or these terms</h2>
+      <p>We may update Ghost Reader or these terms at any time. Continued use of the app after a terms update constitutes acceptance of the revised terms. We will update the date at the top of this page when changes are made.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>Governing law</h2>
+      <p>These terms are governed by the laws of the jurisdiction in which Potato Labs operates, without regard to conflict of law principles.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up" data-aos-duration="500">
+      <h2>Contact</h2>
+      <p>Questions? Email us at <a href="mailto:potatolabs.team@gmail.com">potatolabs.team@gmail.com</a>.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p style="margin-bottom:8px;">
+      <strong style="color: var(--text);">Ghost Reader</strong>
+      &nbsp;·&nbsp;
+      iOS 18+
+    </p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a>
+      &nbsp;·&nbsp;
+      <a href="terms.html">Terms of Use</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:potatolabs.team@gmail.com">Support</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true, duration: 500, easing: 'ease-out-quad' });</script>
+</body>
+</html>

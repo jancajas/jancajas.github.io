@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potato Labs — Text to Speech for Mac</title>
+  <meta name="description" content="Natural text-to-speech for Mac. 8 voices, voice cloning, PDF support. Everything runs on your device — no internet required.">
+  <meta property="og:title" content="Potato Labs — Text to Speech for Mac">
+  <meta property="og:description" content="Natural text-to-speech for Mac. Voice cloning, PDF support, no internet required.">
+  <meta property="og:image" content="assets/app-screenshot-dark.webp">
+  <meta name="theme-color" content="#0b0e17">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #0b0e17;
+      --surface:      #111520;
+      --surface-2:    #161b28;
+      --border:       #1d2335;
+      --text:         #e4e8f0;
+      --muted:        #5b6478;
+      --accent:       #3d7eff;
+      --accent-dim:   rgba(61, 126, 255, 0.12);
+      --accent-ring:  rgba(61, 126, 255, 0.25);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    ::selection { background: rgba(61, 126, 255, 0.25); color: #fff; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── Animations ──────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes shimmer {
+      0%   { background-position: 200% center; }
+      100% { background-position: -200% center; }
+    }
+
+    .anim-fade-up {
+      opacity: 0;
+      animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .delay-1 { animation-delay: 0.08s; }
+    .delay-2 { animation-delay: 0.18s; }
+    .delay-3 { animation-delay: 0.28s; }
+    .delay-4 { animation-delay: 0.38s; }
+    .delay-5 { animation-delay: 0.48s; }
+
+    /* ── Nav ─────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 14, 23, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      transition: opacity 0.15s;
+    }
+
+    .nav-brand:hover { opacity: 0.8; }
+
+    .nav-brand picture img {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+    }
+
+    .nav-link {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.44rem 1.15rem;
+      border-radius: 8px;
+      font-size: 0.83rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: box-shadow 0.2s, transform 0.2s, opacity 0.2s;
+      box-shadow: 0 0 0 0 rgba(61, 126, 255, 0);
+    }
+
+    .nav-link:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(61, 126, 255, 0.35);
+    }
+
+    /* ── Hero ────────────────────────────────── */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 5rem 1.5rem 2rem;
+      overflow: hidden;
+    }
+
+    .hero-glow {
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 500px;
+      background: radial-gradient(ellipse 60% 50% at 50% 40%, rgba(61, 126, 255, 0.09) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-ring);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.75rem;
+    }
+
+    .pill-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s ease infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      max-width: 760px;
+      margin: 0 auto 1.4rem;
+    }
+
+    h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, #6b8fc9 0%, #9ab0d4 30%, #fff 50%, #9ab0d4 70%, #6b8fc9 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 6s linear infinite;
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 430px;
+      margin: 0 auto 2.25rem;
+      line-height: 1.75;
+    }
+
+    .cta-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1.9rem;
+      border-radius: 10px;
+      font-size: 0.93rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: box-shadow 0.2s, transform 0.2s, opacity 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 2px 12px rgba(61, 126, 255, 0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(61, 126, 255, 0.4);
+    }
+
+    .btn-ghost {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 400;
+      padding: 0;
+    }
+
+    .btn-ghost:hover { color: var(--text); }
+
+    /* ── Voices bar ──────────────────────────── */
+    .voices-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      max-width: 680px;
+      margin: 2.5rem auto 0;
+    }
+
+    .voices-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-right: 0.25rem;
+    }
+
+    .chip {
+      display: flex;
+      align-items: center;
+      gap: 0.38rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.32rem 0.85rem;
+      font-size: 0.78rem;
+      color: var(--text);
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .chip:hover {
+      border-color: rgba(255,255,255,0.12);
+      background: var(--surface-2);
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .dot-m { background: #3d7eff; }
+    .dot-f { background: #c084fc; }
+
+    .chip-add {
+      border-color: var(--accent-ring);
+      color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .chip-add:hover {
+      background: rgba(61, 126, 255, 0.18);
+      border-color: rgba(61, 126, 255, 0.4);
+    }
+
+    /* ── Dual screenshots ────────────────────── */
+    .shots-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      max-width: 1100px;
+      margin: 4rem auto 0;
+      padding: 0 1.5rem;
+    }
+
+    .shot-item {
+      position: relative;
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .shot-item:hover { transform: translateY(-4px); }
+
+    .shot-glow {
+      position: absolute;
+      inset: -40px -20px;
+      background: radial-gradient(ellipse 70% 50% at 50% 65%, rgba(61, 126, 255, 0.07) 0%, transparent 70%);
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    .shot-item:hover .shot-glow {
+      opacity: 1.5;
+    }
+
+    .shot-item picture img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+      transition: box-shadow 0.3s, border-color 0.3s;
+    }
+
+    .shot-item:hover picture img {
+      box-shadow: 0 32px 72px rgba(0, 0, 0, 0.6);
+      border-color: rgba(61, 126, 255, 0.2);
+    }
+
+    .shot-label {
+      text-align: center;
+      font-size: 0.74rem;
+      color: var(--muted);
+      margin-top: 0.85rem;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Section wrapper ─────────────────────── */
+    .section {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 4rem;
+      scroll-margin-top: 4rem;
+    }
+
+    .eyebrow {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.18;
+      margin-bottom: 0.85rem;
+    }
+
+    .section-sub {
+      font-size: 0.97rem;
+      color: var(--muted);
+      max-width: 440px;
+      margin-bottom: 2.25rem;
+      line-height: 1.7;
+    }
+
+    /* ── Feature grid ────────────────────────── */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .feat {
+      background: var(--surface);
+      padding: 1.75rem 1.6rem;
+      transition: background 0.2s;
+      position: relative;
+    }
+
+    .feat::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 0;
+      background: radial-gradient(ellipse 60% 60% at 20% 80%, rgba(61, 126, 255, 0.05) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    .feat:hover { background: var(--surface-2); }
+    .feat:hover::after { opacity: 1; }
+
+    .feat-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-ring);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      margin-bottom: 1.1rem;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .feat:hover .feat-icon {
+      background: rgba(61, 126, 255, 0.18);
+      border-color: rgba(61, 126, 255, 0.35);
+    }
+
+    .feat h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    .feat p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ── Divider ─────────────────────────────── */
+    .divider {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── Footer ──────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    footer a:hover { color: var(--text); }
+
+    .nav-back {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav-back:hover { color: var(--text); }
+
+    /* ── Responsive ──────────────────────────── */
+    @media (max-width: 640px) {
+      .nav-inner { padding: 0.85rem 1.25rem; }
+      .hero { padding: 3.5rem 1.25rem 1.5rem; }
+      .shots-grid {
+        grid-template-columns: 1fr;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+      .section { padding-left: 1.25rem; padding-right: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-back">← BigHippo Labs</a>
+      <a class="nav-brand" href="#">
+        <picture>
+          <source srcset="assets/icon.webp" type="image/webp">
+          <img src="assets/icon-128.png" alt="Potato Labs" width="64" height="64">
+        </picture>
+        Potato Labs
+      </a>
+      <a class="nav-link" href="https://apps.apple.com/sg/app/potato-labs/id6758903660">Download on Mac App Store</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="pill anim-fade-up delay-1"><span class="pill-dot"></span> macOS · Fully on-device</div>
+    <h1 class="anim-fade-up delay-2"><em>Your words,<br>spoken naturally.</em></h1>
+    <p class="hero-sub anim-fade-up delay-3">
+      High-quality text-to-speech for Mac — clone any voice, read PDFs aloud, no data leaves your device.
+    </p>
+    <div class="cta-group anim-fade-up delay-4">
+      <a class="btn btn-primary" href="https://apps.apple.com/sg/app/potato-labs/id6758903660">
+        Get on the Mac App Store
+      </a>
+      <a class="btn btn-ghost" href="#features">See features ↓</a>
+    </div>
+
+    <!-- Voices bar -->
+    <div class="voices-bar anim-fade-up delay-5">
+      <span class="voices-label">8 voices</span>
+      <div class="chip"><span class="dot dot-m"></span> Kai</div>
+      <div class="chip"><span class="dot dot-m"></span> Alex</div>
+      <div class="chip"><span class="dot dot-m"></span> Jordan</div>
+      <div class="chip"><span class="dot dot-m"></span> Nico</div>
+      <div class="chip"><span class="dot dot-f"></span> Riley</div>
+      <div class="chip"><span class="dot dot-f"></span> Nova</div>
+      <div class="chip"><span class="dot dot-f"></span> Lumi</div>
+      <div class="chip"><span class="dot dot-f"></span> Sage</div>
+      <div class="chip chip-add">+ Clone your own</div>
+    </div>
+  </header>
+
+  <!-- Dual screenshots -->
+  <div class="shots-grid">
+    <div class="shot-item anim-fade-up delay-3">
+      <div class="shot-glow"></div>
+      <picture>
+        <source srcset="assets/app-screenshot-dark.webp" type="image/webp">
+        <img
+          src="assets/app screenshot-dark.png"
+          alt="Potato Labs dark mode showing PDF import and playback controls"
+          loading="eager"
+        >
+      </picture>
+      <p class="shot-label">Dark mode · PDF import</p>
+    </div>
+    <div class="shot-item anim-fade-up delay-4">
+      <div class="shot-glow"></div>
+      <picture>
+        <source srcset="assets/app-screenshot-light.webp" type="image/webp">
+        <img
+          src="assets/app screenshot-light.png"
+          alt="Potato Labs light mode showing text input and voice selector"
+          loading="eager"
+        >
+      </picture>
+      <p class="shot-label">Light mode · Text &amp; voice</p>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="eyebrow">Features</div>
+    <h2>Everything you need,<br>nothing you don't.</h2>
+    <p class="section-sub">No account. No cloud. Just great audio.</p>
+    <div class="grid-3">
+      <div class="feat">
+        <div class="feat-icon">🎙️</div>
+        <h3>Voice Cloning</h3>
+        <p>Clone any voice from an MP3, M4A, FLAC, or WAV file — drop it in and the app learns it instantly.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">📄</div>
+        <h3>File Import</h3>
+        <p>PDF, EPUB, Markdown, and TXT. Drag in a file or paste directly.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">⚡</div>
+        <h3>Real-time Streaming</h3>
+        <p>Audio starts playing the moment generation begins — no waiting for long passages to finish.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">🔒</div>
+        <h3>100% On-device</h3>
+        <p>All models run locally on your Mac. No accounts, no telemetry, no network calls — ever.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">💾</div>
+        <h3>Export to WAV</h3>
+        <p>Save any generated audio as a high-quality WAV file to use in any app or workflow.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">🌙</div>
+        <h3>Dark &amp; Light Mode</h3>
+        <p>Switch between dark and light themes. Native macOS feel, right at home on your desktop.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Potato Labs &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a> &nbsp;·&nbsp; <a href="support.html">Support</a></p>
+  </footer>
+
+</body>
+</html>
