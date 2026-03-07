@@ -7,13 +7,8 @@
   --font: "SF Pro Display", Inter, -apple-system, "Helvetica Neue", sans-serif;
   --gray: #6e6e73;
   --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
-
-  /* Card geometry */
-  --card-w: 270px;       /* collapsed (square-ish) */
-  --card-h: 300px;
-  --card-exp: 680px;     /* expanded width */
-  --overlap: 76px;       /* how much card N+1 hides behind card N */
-  --reveal-w: calc(var(--card-exp) - var(--card-w)); /* 460px */
+  --card-w: 320px;
+  --card-h: 380px;
 }
 
 html { scroll-behavior: smooth; }
@@ -59,8 +54,8 @@ body {
 }
 
 .nav-logo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   mix-blend-mode: multiply;
   border-radius: 6px;
@@ -117,7 +112,7 @@ body {
 }
 
 /* ═══════════════════════════════════════
-   SITE HEADER (headline — towards top)
+   SITE HEADER
 ═══════════════════════════════════════ */
 .site-header {
   position: relative;
@@ -157,7 +152,7 @@ body {
   flex-direction: column;
   gap: 24px;
   flex: 1;
-  justify-content: center;  /* vertically center in remaining space */
+  justify-content: center;
 }
 
 .philosophy-line {
@@ -177,56 +172,53 @@ body {
 }
 
 /* ═══════════════════════════════════════
-   CARD STACK — horizontal dock
+   CAROUSEL
 ═══════════════════════════════════════ */
-.card-stack {
-  display: flex;
-  align-items: stretch;
-  /* width is determined by collapsed cards + overlap */
+.carousel-wrapper {
+  position: relative;
+  /* Negative margin to bleed past the padding and allow peek */
+  margin-right: -8vw;
 }
 
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 12px;
+  /* Hide scrollbar but keep scrollability */
+  scrollbar-width: none;
+}
+.carousel-track::-webkit-scrollbar { display: none; }
+
 /* ═══════════════════════════════════════
-   BENTO CARD
+   CAROUSEL CARD
 ═══════════════════════════════════════ */
-.bento-card {
-  position: relative;
-  width: var(--card-w);
+.carousel-card {
   flex: 0 0 var(--card-w);
-  height: var(--card-h);
+  width: var(--card-w);
+  min-height: var(--card-h);
   border-radius: 26px;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
-  cursor: pointer;
-  /* Stack: first card is in front */
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 28px;
+  scroll-snap-align: start;
+  cursor: default;
   transition:
-    width 0.72s var(--ease-spring),
-    flex-basis 0.72s var(--ease-spring),
-    margin-left 0.72s var(--ease-spring),
-    box-shadow 0.3s ease,
-    transform 0.35s var(--ease-spring);
+    transform 0.35s var(--ease-spring),
+    box-shadow 0.3s ease;
 }
 
-/* Overlap: every card after the first peeks from behind the previous */
-.bento-card + .bento-card {
-  margin-left: calc(-1 * var(--overlap));
+.carousel-card:hover {
+  transform: translateY(-6px);
 }
 
-/* Default z-index: leftmost card is on top */
-.bento-card:nth-child(1) { z-index: 3; }
-.bento-card:nth-child(2) { z-index: 2; }
-.bento-card:nth-child(3) { z-index: 1; }
-
-/* ── Active (expanded) state ── */
-.bento-card.is-active {
-  width: var(--card-exp);
-  flex-basis: var(--card-exp);
-  z-index: 10;
-}
-
-/* When a non-first card becomes active, slide it OUT of the overlap */
-.bento-card:not(:first-child).is-active {
-  margin-left: 12px;
+/* Last card: add right padding so it doesn't get cut at the edge */
+.carousel-card:last-child {
+  margin-right: 8vw;
 }
 
 /* ── Glass treatments ── */
@@ -243,7 +235,7 @@ body {
     0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
-.card-potato.is-active {
+.card-potato:hover {
   box-shadow:
     inset 0 1.5px 0 rgba(255, 255, 255, 0.88),
     0 36px 80px rgba(180, 100, 0, 0.18),
@@ -262,66 +254,22 @@ body {
     0 4px 14px rgba(79, 70, 229, 0.14);
 }
 
-.card-ghost.is-active {
+.card-ghost:hover {
   box-shadow:
     inset 0 1.5px 0 rgba(255, 255, 255, 0.07),
     0 36px 80px rgba(0, 0, 0, 0.50),
     0 8px 28px rgba(79, 70, 229, 0.24);
 }
 
-/* ═══════════════════════════════════════
-   CARD FACE — always visible column
-═══════════════════════════════════════ */
-.card-face {
-  flex: 0 0 var(--card-w);
-  width: var(--card-w);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  padding: 32px 24px;
-  position: relative;
-  z-index: 1;
-}
-
-/* Subtle divider that appears on expand */
-.card-potato .card-face {
-  border-right: 1px solid rgba(0, 0, 0, 0);
-  transition: border-color 0.35s ease 0.15s;
-}
-.card-potato.is-active .card-face {
-  border-right-color: rgba(0, 0, 0, 0.07);
-}
-
-.card-ghost .card-face {
-  border-right: 1px solid rgba(255, 255, 255, 0);
-  transition: border-color 0.35s ease 0.15s;
-}
-.card-ghost.is-active .card-face {
-  border-right-color: rgba(255, 255, 255, 0.07);
-}
-
 /* Icon frame */
 .icon-frame {
-  width: 108px;
-  height: 108px;
-  border-radius: 30px;
+  width: 88px;
+  height: 88px;
+  border-radius: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 56px;
-  line-height: 1;
-  transition: transform 0.45s var(--ease-spring);
-}
-
-.bento-card:hover:not(.is-active) {
-  transform: translateY(-7px);
-}
-
-.bento-card:hover .icon-frame {
-  transform: scale(1.05);
+  flex-shrink: 0;
 }
 
 .card-potato .icon-frame {
@@ -346,55 +294,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 22px;
-}
-
-/* Name below icon (compact, face-only) */
-.face-name {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.card-potato .face-name { color: #1d1d1f; }
-.card-ghost  .face-name { color: #e2e8f0; }
-
-/* ═══════════════════════════════════════
-   CARD REVEAL — slides in on expand
-═══════════════════════════════════════ */
-.card-reveal {
-  flex: 0 0 var(--reveal-w);
-  width: var(--reveal-w);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 18px;
-  padding: 40px 52px 40px 36px;
-
-  /* Hidden until active */
-  opacity: 0;
-  transform: translateX(-16px);
-  pointer-events: none;
-  transition:
-    opacity 0.38s ease,
-    transform 0.45s var(--ease-spring);
-}
-
-.bento-card.is-active .card-reveal {
-  opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
-  transition-delay: 0.24s;
-}
-
-.card-banner {
-  width: 100%;
-  height: 90px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 12px;
+  border-radius: 18px;
 }
 
 /* Tag pill */
@@ -421,9 +321,9 @@ body {
   color: #a5b4fc;
 }
 
-/* App name (large, in reveal) */
+/* App name */
 .app-name {
-  font-size: clamp(30px, 3vw, 44px);
+  font-size: clamp(28px, 3vw, 38px);
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.04;
@@ -438,7 +338,7 @@ body {
   line-height: 1.72;
   font-weight: 400;
   letter-spacing: -0.005em;
-  max-width: 38ch;
+  flex: 1;
 }
 
 .card-potato .app-desc { color: #78350f; }
@@ -456,6 +356,7 @@ body {
   text-decoration: none;
   letter-spacing: -0.01em;
   width: fit-content;
+  margin-top: auto;
   transition:
     transform 0.26s var(--ease-spring),
     box-shadow 0.26s ease,
@@ -514,64 +415,29 @@ footer {
   color: #b0b0b8;
 }
 
+.footer-contact {
+  margin-top: 10px;
+}
+
+.footer-contact a {
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+.footer-contact a:hover { color: #1d1d1f; }
+
 /* ═══════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════ */
-@media (max-width: 900px) {
-  :root {
-    --card-w: 236px;
-    --card-h: 268px;
-    --card-exp: 558px;
-    --overlap: 62px;
-  }
-}
-
 @media (max-width: 768px) {
   #nav { padding: 0 24px; }
-
   .site-main { padding: 7vh 6vw 5vh; }
-
-  /* Stack goes vertical on mobile */
-  .card-stack { flex-direction: column; gap: 14px; }
-
-  .bento-card,
-  .bento-card + .bento-card {
-    width: 100% !important;
-    flex-basis: auto !important;
-    margin-left: 0 !important;
-    height: auto !important;
-    flex-direction: column;
-  }
-
-  .card-face {
-    flex-basis: auto !important;
-    width: 100% !important;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 16px;
-    padding: 24px;
-    border-right: none !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  }
-
-  .card-ghost .card-face {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  }
-
-  .card-reveal {
-    flex-basis: auto !important;
-    width: 100% !important;
-    padding: 20px 24px 28px;
-    opacity: 1 !important;
-    transform: none !important;
-    pointer-events: auto !important;
-    transition: none !important;
-  }
-
-  .icon-frame { width: 64px; height: 64px; font-size: 32px; border-radius: 18px; }
-  .face-name { font-size: 17px; }
+  .carousel-wrapper { margin-right: -6vw; }
+  .carousel-card:last-child { margin-right: 6vw; }
 }
 
 @media (max-width: 480px) {
   .nav-links { display: none; }
+  :root { --card-w: 280px; }
 }

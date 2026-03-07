@@ -36,61 +36,53 @@
       </p>
     </header>
 
-    <!-- Dock stack -->
+    <!-- Carousel -->
     <div class="stack-area">
       <p class="philosophy-line">Apps built with privacy in mind.</p>
       <p class="section-label">Our Apps</p>
 
-      <div class="card-stack" id="cardStack">
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="carouselTrack">
 
-        <!-- PotatoLabs -->
-        <article class="bento-card card-potato" data-index="0">
-          <div class="card-face">
+          <!-- GhostReader -->
+          <article class="carousel-card card-ghost">
             <div class="icon-frame">
               <picture>
-                <source srcset="landing-page-potato-labs/assets/icon.webp" type="image/webp">
-                <img src="landing-page-potato-labs/assets/icon-128.png" alt="PotatoLabs icon">
+                <source srcset="page-ghostreader/screenshots/icon.webp" type="image/webp">
+                <img src="page-ghostreader/screenshots/icon.png" alt="GhostReader icon">
               </picture>
             </div>
-            <span class="face-name">PotatoLabs</span>
-          </div>
-          <div class="card-reveal">
-            <span class="app-tag">Mac App</span>
-            <h2 class="app-name">PotatoLabs</h2>
-            <p class="app-desc">Natural text-to-speech for Mac. Clone any voice, read PDFs aloud. Runs entirely on your device — no internet required.</p>
-            <a href="landing-page-potato-labs/index.html" class="app-cta">
-              Learn More
-              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- GhostReader -->
-        <article class="bento-card card-ghost" data-index="1">
-          <div class="card-face">
-            <div class="icon-frame">
-              <picture>
-                <source srcset="landing-page-ghost-reader/screenshots/icon.webp" type="image/webp">
-                <img src="landing-page-ghost-reader/screenshots/icon.png" alt="GhostReader icon">
-              </picture>
-            </div>
-            <span class="face-name">GhostReader</span>
-          </div>
-          <div class="card-reveal">
             <span class="app-tag">iOS App</span>
             <h2 class="app-name">GhostReader</h2>
-            <p class="app-desc">Turn any document into audio, entirely on-device. Offline AI narration for PDFs, EPUBs, and web articles. Nothing sent anywhere.</p>
-            <a href="landing-page-ghost-reader/index.html" class="app-cta">
+            <p class="app-desc">Read any document aloud — PDF, EPUB, web articles and more. Fully offline, no accounts, no limits.</p>
+            <a href="page-ghostreader/index.html" class="app-cta">
               Learn More
               <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>
-          </div>
-        </article>
+          </article>
 
+          <!-- PotatoLabs -->
+          <article class="carousel-card card-potato">
+            <div class="icon-frame">
+              <picture>
+                <source srcset="page-potatolabs/assets/icon.webp" type="image/webp">
+                <img src="page-potatolabs/assets/icon-128.png" alt="PotatoLabs icon">
+              </picture>
+            </div>
+            <span class="app-tag">Mac App</span>
+            <h2 class="app-name">PotatoLabs</h2>
+            <p class="app-desc">High-quality text-to-speech for Mac. Clone any voice, read PDFs aloud — everything stays on your device.</p>
+            <a href="page-potatolabs/index.html" class="app-cta">
+              Learn More
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </article>
+
+        </div>
       </div>
     </div>
   </main>
@@ -99,6 +91,7 @@
   <footer id="about">
     <p>&copy; 2026 BigHippo Labs</p>
     <p class="footer-tagline">Privacy-first software.</p>
+    <p class="footer-contact"><a href="mailto:hello@bighippolabs.com">hello@bighippolabs.com</a></p>
   </footer>
 
   <script src="src/js/main.js"></script>
