@@ -223,8 +223,8 @@ body {
 
 /* ── Glass treatments ── */
 
-/* PotatoLabs — warm glass */
-.card-potato {
+/* Sonar — warm glass */
+.card-sonar {
   background: rgba(255, 250, 235, 0.80);
   backdrop-filter: blur(36px) saturate(200%);
   -webkit-backdrop-filter: blur(36px) saturate(200%);
@@ -235,7 +235,7 @@ body {
     0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
-.card-potato:hover {
+.card-sonar:hover {
   box-shadow:
     inset 0 1.5px 0 rgba(255, 255, 255, 0.88),
     0 36px 80px rgba(180, 100, 0, 0.18),
@@ -272,7 +272,7 @@ body {
   flex-shrink: 0;
 }
 
-.card-potato .icon-frame {
+.card-sonar .icon-frame {
   background: rgba(255, 255, 255, 0.58);
   border: 1px solid rgba(255, 255, 255, 0.82);
   box-shadow:
@@ -309,7 +309,7 @@ body {
   text-transform: uppercase;
 }
 
-.card-potato .app-tag {
+.card-sonar .app-tag {
   background: rgba(255, 255, 255, 0.52);
   border: 1px solid rgba(255, 255, 255, 0.72);
   color: #92400e;
@@ -329,7 +329,7 @@ body {
   line-height: 1.04;
 }
 
-.card-potato .app-name { color: #1d1d1f; }
+.card-sonar .app-name { color: #1d1d1f; }
 .card-ghost  .app-name { color: #f1f5f9; }
 
 /* Description */
@@ -341,7 +341,7 @@ body {
   flex: 1;
 }
 
-.card-potato .app-desc { color: #78350f; }
+.card-sonar .app-desc { color: #78350f; }
 .card-ghost  .app-desc { color: #94a3b8; }
 
 /* CTA button */
@@ -366,7 +366,7 @@ body {
 .app-cta svg { transition: transform 0.24s var(--ease-spring); }
 .app-cta:hover svg { transform: translateX(5px); }
 
-.card-potato .app-cta {
+.card-sonar .app-cta {
   background: rgba(255, 255, 255, 0.56);
   border: 1px solid rgba(255, 255, 255, 0.82);
   color: #92400e;
@@ -374,7 +374,7 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.95),
     0 3px 12px rgba(0, 0, 0, 0.06);
 }
-.card-potato .app-cta:hover {
+.card-sonar .app-cta:hover {
   transform: translateY(-2px);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.95),
