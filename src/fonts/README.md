@@ -1,0 +1,1 @@
+Switzer by Indian Type Foundry, distributed by Fontshare. Downloaded 2026-10-30 from https://www.fontshare.com/fonts/switzer via the official CSS endpoint. License: Fontshare Free Font License; see https://www.fontshare.com/licenses/itf-ffl . Weights: Regular, Medium, Semibold.

@@ -1,0 +1,1502 @@
+{
+ "url": "https://bighippolabs.com/",
+ "at": "2026-10-30T00:35:16.512Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    1,
+    0.81
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 1125,
+     "screens": 1.3,
+     "words": 71,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 2,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "BigHippo Labs",
+     "words": 2,
+     "chars": 13,
+     "lines": 1,
+     "size": 88,
+     "vw": 6.1,
+     "font": "SF Pro Display",
+     "weight": 700,
+     "tracking": -0.045,
+     "leading": 1.01,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.84,
+     "top": 132,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "BigHippo Labs",
+     "words": 2,
+     "lines": 1,
+     "size": 88,
+     "font": "SF Pro Display"
+    },
+    "headings": [
+     {
+      "text": "BigHippo Labs",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 88,
+      "vw": 6.1,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 1.01,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 132,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "GhostReader",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 38,
+      "vw": 2.6,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 633,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sonar",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 38,
+      "vw": 2.6,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.18,
+      "top": 633,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "SF Pro Display",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      19,
+      38,
+      88
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "SF Pro Display",
+      "size": 15,
+      "leading": 1.72,
+      "weight": 400,
+      "tracking": -0.005,
+      "contrast": null
+     },
+     "measureChars": 35,
+     "max": {
+      "size": 88,
+      "vw": 6.1,
+      "font": "SF Pro Display",
+      "text": "BigHippo Labs"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 3,
+     "microLabelShare": 0.051,
+     "microSamples": [
+      "Our Apps",
+      "iOS App",
+      "Mac App"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.15,
+     "smallText": 1
+    },
+    "eyebrows": [
+     {
+      "text": "iOS App",
+      "above": "GhostReader",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 11,
+      "top": 592
+     },
+     {
+      "text": "Mac App",
+      "above": "Sonar",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 11,
+      "top": 592
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f0f0f5",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#78350f",
+       "share": 0.25
+      },
+      {
+       "color": "#94a3b8",
+       "share": 0.23
+      },
+      {
+       "color": "#6e6e73",
+       "share": 0.13
+      },
+      {
+       "color": "#a0a0a8",
+       "share": 0.12
+      },
+      {
+       "color": "#1d1d1f",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#92400e"
+     },
+     "lowContrast": [
+      {
+       "text": "Privacy-first software.",
+       "ratio": 1.9,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#b0b0b8",
+       "bg": "#f0f0f5"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 41,
+     "withShadow": 2,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Learn More",
+      "Learn More"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 6,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "article.carousel-card.card-ghost → rgba(255, 255, 255, 0.07) 0px 1.5px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 20px ",
+      "div.icon-frame → rgba(165, 180, 252, 0.18) 0px 1px 0px 0px inset, rgba(79, 70, 229, 0.32) 0px 8px",
+      "a.app-cta → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.22) 0px 3px 12p",
+      "article.carousel-card.card-sonar → rgba(255, 255, 255, 0.88) 0px 1.5px 0px 0px inset, rgba(180, 100, 0, 0.12) 0px 2"
+     ],
+     "gradients": 4,
+     "scrims": 0,
+     "gradientSamples": [
+      "main.site-main → linear-gradient(150deg, rgb(236, 234, 244) 0%, rgb(228, 221, 245) 35%, rgb(221, 213, 248) 65%, rgb(216, 208, 2",
+      "div.bg-orb.orb-amber → radial-gradient(circle, rgba(251, 191, 36, 0.38) 0%, rgba(0, 0, 0, 0) 68%)",
+      "div.bg-orb.orb-violet → radial-gradient(circle, rgba(139, 92, 246, 0.28) 0%, rgba(0, 0, 0, 0) 68%)",
+      "div.bg-orb.orb-rose → radial-gradient(circle, rgba(244, 114, 182, 0.16) 0%, rgba(0, 0, 0, 0) 68%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "nav#nav 1440px",
+      "footer#about 1440px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 3,
+     "roundedBoxes": 2,
+     "boxRadius": 26,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 60,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 1125,
+    "margins": {
+     "left": 52,
+     "right": 52
+    },
+    "sections": [
+     {
+      "sel": "main.site-main",
+      "tag": "main",
+      "top": 60,
+      "height": 900,
+      "words": 62,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "BigHippo Labs",
+       "size": 88,
+       "tag": "h1"
+      },
+      "left": 115,
+      "right": 694,
+      "textLeft": 115,
+      "textRight": 694,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#about",
+      "tag": "footer",
+      "top": 960,
+      "height": 165,
+      "words": 7,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 649,
+      "right": 649,
+      "textLeft": 649,
+      "textRight": 649,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "BigHippo Labs",
+      "size": 88,
+      "top": 132,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 144,
+      "n": 2
+     },
+     {
+      "x": 484,
+      "n": 2
+     },
+     {
+      "x": 115,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.4,
+    "voidBox": {
+     "x": 780,
+     "y": 120,
+     "w": 660,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    1,
+    0.88
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 1249,
+     "screens": 1.2,
+     "words": 71,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 2,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "BigHippo Labs",
+     "words": 2,
+     "chars": 13,
+     "lines": 1,
+     "size": 49.9,
+     "vw": 6.5,
+     "font": "SF Pro Display",
+     "weight": 700,
+     "tracking": -0.045,
+     "leading": 1.01,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 132,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "BigHippo Labs",
+     "words": 2,
+     "lines": 1,
+     "size": 49.9,
+     "font": "SF Pro Display"
+    },
+    "headings": [
+     {
+      "text": "BigHippo Labs",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 49.9,
+      "vw": 6.5,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 1.01,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 132,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "GhostReader",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 680,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sonar",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.34,
+      "top": 680,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "SF Pro Display",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      28,
+      50
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "SF Pro Display",
+      "size": 15,
+      "leading": 1.72,
+      "weight": 400,
+      "tracking": -0.005,
+      "contrast": null
+     },
+     "measureChars": 35,
+     "max": {
+      "size": 49.9,
+      "vw": 6.5,
+      "font": "SF Pro Display",
+      "text": "BigHippo Labs"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 3,
+     "microLabelShare": 0.051,
+     "microSamples": [
+      "Our Apps",
+      "iOS App",
+      "Mac App"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.15,
+     "smallText": 1
+    },
+    "eyebrows": [
+     {
+      "text": "iOS App",
+      "above": "GhostReader",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 11,
+      "top": 639
+     },
+     {
+      "text": "Mac App",
+      "above": "Sonar",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 11,
+      "top": 639
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f0f0f5",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#78350f",
+       "share": 0.25
+      },
+      {
+       "color": "#94a3b8",
+       "share": 0.23
+      },
+      {
+       "color": "#6e6e73",
+       "share": 0.13
+      },
+      {
+       "color": "#a0a0a8",
+       "share": 0.12
+      },
+      {
+       "color": "#1d1d1f",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#92400e"
+     },
+     "lowContrast": [
+      {
+       "text": "Privacy-first software.",
+       "ratio": 1.9,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#b0b0b8",
+       "bg": "#f0f0f5"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 41,
+     "withShadow": 2,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Learn More",
+      "Learn More"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 6,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "article.carousel-card.card-ghost → rgba(255, 255, 255, 0.07) 0px 1.5px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 20px ",
+      "div.icon-frame → rgba(165, 180, 252, 0.18) 0px 1px 0px 0px inset, rgba(79, 70, 229, 0.32) 0px 8px",
+      "a.app-cta → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.22) 0px 3px 12p",
+      "article.carousel-card.card-sonar → rgba(255, 255, 255, 0.88) 0px 1.5px 0px 0px inset, rgba(180, 100, 0, 0.12) 0px 2"
+     ],
+     "gradients": 4,
+     "scrims": 0,
+     "gradientSamples": [
+      "main.site-main → linear-gradient(150deg, rgb(236, 234, 244) 0%, rgb(228, 221, 245) 35%, rgb(221, 213, 248) 65%, rgb(216, 208, 2",
+      "div.bg-orb.orb-amber → radial-gradient(circle, rgba(251, 191, 36, 0.38) 0%, rgba(0, 0, 0, 0) 68%)",
+      "div.bg-orb.orb-violet → radial-gradient(circle, rgba(139, 92, 246, 0.28) 0%, rgba(0, 0, 0, 0) 68%)",
+      "div.bg-orb.orb-rose → radial-gradient(circle, rgba(244, 114, 182, 0.16) 0%, rgba(0, 0, 0, 0) 68%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "nav#nav 768px",
+      "footer#about 768px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 3,
+     "roundedBoxes": 2,
+     "boxRadius": 26,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 60,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 1249,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "main.site-main",
+      "tag": "main",
+      "top": 60,
+      "height": 1024,
+      "words": 62,
+      "media": 0,
+      "middle": 49,
+      "heading": {
+       "text": "BigHippo Labs",
+       "size": 50,
+       "tag": "h1"
+      },
+      "left": 46,
+      "right": 91,
+      "textLeft": 46,
+      "textRight": 91,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#about",
+      "tag": "footer",
+      "top": 1084,
+      "height": 165,
+      "words": 7,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 313,
+      "right": 313,
+      "textLeft": 313,
+      "textRight": 313,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "BigHippo Labs",
+      "size": 50,
+      "top": 132,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 75,
+      "n": 2
+     },
+     {
+      "x": 415,
+      "n": 2
+     },
+     {
+      "x": 46,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    1,
+    0.82
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 1069,
+     "screens": 1.3,
+     "words": 70,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 2,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "BigHippo Labs",
+     "words": 2,
+     "chars": 13,
+     "lines": 1,
+     "size": 46,
+     "vw": 11.8,
+     "font": "SF Pro Display",
+     "weight": 700,
+     "tracking": -0.045,
+     "leading": 1.01,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 119,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "BigHippo Labs",
+     "words": 2,
+     "lines": 1,
+     "size": 46,
+     "font": "SF Pro Display"
+    },
+    "headings": [
+     {
+      "text": "BigHippo Labs",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 46,
+      "vw": 11.8,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 1.01,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 119,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "GhostReader",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 568,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sonar",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.57,
+      "top": 568,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "SF Pro Display",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      28,
+      46
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "SF Pro Display",
+      "size": 15,
+      "leading": 1.72,
+      "weight": 400,
+      "tracking": -0.005,
+      "contrast": null
+     },
+     "measureChars": 30,
+     "max": {
+      "size": 46,
+      "vw": 11.8,
+      "font": "SF Pro Display",
+      "text": "BigHippo Labs"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 3,
+     "microLabelShare": 0.051,
+     "microSamples": [
+      "Our Apps",
+      "iOS App",
+      "Mac App"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.15,
+     "smallText": 1
+    },
+    "eyebrows": [
+     {
+      "text": "iOS App",
+      "above": "GhostReader",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 11,
+      "top": 527
+     },
+     {
+      "text": "Mac App",
+      "above": "Sonar",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 11,
+      "top": 527
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f0f0f5",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.2,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#78350f",
+       "share": 0.25
+      },
+      {
+       "color": "#94a3b8",
+       "share": 0.23
+      },
+      {
+       "color": "#a0a0a8",
+       "share": 0.13
+      },
+      {
+       "color": "#6e6e73",
+       "share": 0.12
+      },
+      {
+       "color": "#1d1d1f",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#92400e"
+     },
+     "lowContrast": [
+      {
+       "text": "Privacy-first software.",
+       "ratio": 1.9,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#b0b0b8",
+       "bg": "#f0f0f5"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 41,
+     "withShadow": 2,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Learn More",
+      "Learn More"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 6,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "article.carousel-card.card-ghost → rgba(255, 255, 255, 0.07) 0px 1.5px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 20px ",
+      "div.icon-frame → rgba(165, 180, 252, 0.18) 0px 1px 0px 0px inset, rgba(79, 70, 229, 0.32) 0px 8px",
+      "a.app-cta → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.22) 0px 3px 12p",
+      "article.carousel-card.card-sonar → rgba(255, 255, 255, 0.88) 0px 1.5px 0px 0px inset, rgba(180, 100, 0, 0.12) 0px 2"
+     ],
+     "gradients": 4,
+     "scrims": 0,
+     "gradientSamples": [
+      "main.site-main → linear-gradient(150deg, rgb(236, 234, 244) 0%, rgb(228, 221, 245) 35%, rgb(221, 213, 248) 65%, rgb(216, 208, 2",
+      "div.bg-orb.orb-amber → radial-gradient(circle, rgba(251, 191, 36, 0.38) 0%, rgba(0, 0, 0, 0) 68%)",
+      "div.bg-orb.orb-violet → radial-gradient(circle, rgba(139, 92, 246, 0.28) 0%, rgba(0, 0, 0, 0) 68%)",
+      "div.bg-orb.orb-rose → radial-gradient(circle, rgba(244, 114, 182, 0.16) 0%, rgba(0, 0, 0, 0) 68%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "nav#nav 390px",
+      "footer#about 390px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 3,
+     "roundedBoxes": 2,
+     "boxRadius": 26,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 60,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 1069,
+    "margins": {
+     "left": 23,
+     "right": 0
+    },
+    "sections": [
+     {
+      "sel": "main.site-main",
+      "tag": "main",
+      "top": 60,
+      "height": 844,
+      "words": 62,
+      "media": 0,
+      "middle": 34,
+      "heading": {
+       "text": "BigHippo Labs",
+       "size": 46,
+       "tag": "h1"
+      },
+      "left": 23,
+      "right": 0,
+      "textLeft": 23,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#about",
+      "tag": "footer",
+      "top": 904,
+      "height": 165,
+      "words": 7,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 124,
+      "right": 124,
+      "textLeft": 124,
+      "textRight": 124,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "BigHippo Labs",
+      "size": 46,
+      "top": 119,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Mac App",
+      "side": "right",
+      "px": 0
+     },
+     {
+      "text": "Sonar",
+      "side": "right",
+      "px": 0
+     },
+     {
+      "text": "Voice cloning and text-to-speech for Mac. Clone an",
+      "side": "right",
+      "px": 0
+     },
+     {
+      "text": "Learn More",
+      "side": "right",
+      "px": 0
+     }
+    ],
+    "edges": [
+     {
+      "x": 52,
+      "n": 2
+     },
+     {
+      "x": 352,
+      "n": 2
+     },
+     {
+      "x": 23,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "2 eyebrow/kicker label(s) above headings: \"iOS App\" (pill) above \"GhostReader\"; \"Mac App\" (pill) above \"Sonar\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "3 tiny uppercase letter-spaced labels (e.g. \"Our Apps\", \"iOS App\", \"Mac App\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "4 gradient fill(s): main.site-main → linear-gradient(150deg, rgb(236, 234, 244) 0%, rgb(228, 221, 245) 35%, rgb(221, 213, 248) 65%, rgb(216, 208, 2 | div.bg-orb.orb-amber → radial-gradient(circle, rgba(251, 191, 36, 0.38) 0%, rgba(0, 0, 0, 0) 68%) | div.bg-orb.orb-violet → radial-gradient(circle, rgba(139, 92, 246, 0.28) 0%, rgba(0, 0, 0, 0) 68%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "6 box-shadow(s) on elements at rest: article.carousel-card.card-ghost → rgba(255, 255, 255, 0.07) 0px 1.5px 0px 0px inset, rgba(0, 0, 0, 0.35) 0px 20px  | div.icon-frame → rgba(165, 180, 252, 0.18) 0px 1px 0px 0px inset, rgba(79, 70, 229, 0.32) 0px 8px | a.app-cta → rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.22) 0px 3px 12p",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): nav#nav 1440px | footer#about 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "2 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "glass",
+   "width": 1440,
+   "message": "3 backdrop-blur surfaces.",
+   "fix": "One blurred sticky bar at most; glass cards are a tell.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"Privacy-first software.\" 1.9:1 (#b0b0b8 on #f0f0f5)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 15px.",
+   "fix": "Body copy 16–20px.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 1440,
+   "message": "1 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 1440,
+   "message": "The h1 is a bare name (\"BigHippo Labs\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "hero-void",
+   "width": 1440,
+   "message": "40% of the first screen is one empty block (660×780px at 780,120).",
+   "fix": "Place the void on purpose or fill it: move the picture, the film or one fact into it, grow the headline to meet it, or shrink the screen to its content. A void reads as placed only when something closes it on the far side and it is the screen's one rest."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 1 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 390,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 390,
+   "message": "The margins differ: 23px on the left, 0px on the right, at 390px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 390,
+   "message": "4 text block(s) sit within 12px of the screen edge: \"Mac App\" (0px from the right); \"Sonar\" (0px from the right); \"Voice cloning and text-to-spee\" (0px from the right); \"Learn More\" (0px from the right)",
+   "fix": "Keep text inside the page margin (16–20px). Only display type deliberately bled past the edge may touch it."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/private/tmp/bighippo-before-audit/desktop-fold.jpg",
+   "pages": [
+    "/private/tmp/bighippo-before-audit/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/private/tmp/bighippo-before-audit/tablet-fold.jpg",
+   "pages": [
+    "/private/tmp/bighippo-before-audit/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/private/tmp/bighippo-before-audit/mobile-fold.jpg",
+   "pages": [
+    "/private/tmp/bighippo-before-audit/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

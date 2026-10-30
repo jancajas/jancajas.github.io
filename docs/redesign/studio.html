@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>BigHippo Labs — Independent software studio</title>
+<link rel="stylesheet" href="studio.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Main navigation"><a class="wordmark" href="#">BigHippo Labs</a><div><a href="#ghost-reader">Ghost Reader</a><a href="#sonar">Sonar</a><a href="#studio">The studio</a></div></nav>
+<main id="main">
+<header class="introduction"><h1>Small studio.<br>Thoughtful software.</h1><p>We’re an independent development studio. <br>We make a few things, and give each one our full attention.</p></header>
+<section class="ghost product" id="ghost-reader" aria-labelledby="ghost-title">
+<div class="product-copy"><h2 id="ghost-title">Ghost Reader Live</h2><p class="promise">Your books.<br>Out loud.</p><p class="description">Turn books and documents into listening time. Follow the words as they’re read aloud, with a player that feels familiar.</p><p class="platform">For iPhone and iPad</p><div class="actions"><a class="button" href="../../page-ghostreader/">Explore Ghost Reader</a><a href="https://apps.apple.com/app/id6759826819">View on the App Store</a></div></div>
+<div class="ghost-visual" aria-label="Ghost Reader app screenshots"><img class="home" src="assets/ghost-home.png" alt="Ghost Reader Home showing the current book and click-wheel player"><img class="reader" src="assets/ghost-reader.png" alt="Ghost Reader read-along view highlighting the spoken word"></div>
+</section>
+<section class="sonar product" id="sonar" aria-labelledby="sonar-title">
+<div class="sonar-intro"><div><h2 id="sonar-title">Sonar</h2><p class="promise">A voice studio.<br>On your Mac.</p></div><div class="sonar-description"><p class="description">Give your words a voice. Create narration, clone a voice with permission, and export WAV audio. Speech is generated on your Mac.</p><p class="platform">For macOS</p><div class="actions"><a class="button" href="../../page-sonar/">Explore Sonar</a><a href="https://apps.apple.com/app/id6758903660">View on the App Store</a></div></div></div>
+<img class="sonar-screen" loading="lazy" src="../../page-sonar/assets/app-screenshot-dark.webp" alt="Sonar’s Mac workspace with voice selection, text editor and speech playback">
+</section>
+<section class="studio" id="studio"><h2>A little about us.</h2><div><p>BigHippo Labs is a small independent software studio. We build focused apps with care for the details, from the first screen to the everyday interactions.</p><a href="mailto:hello@bighippolabs.com">hello@bighippolabs.com</a></div></section>
+</main>
+<footer><span>© 2026 BigHippo Labs</span><a href="../../page-ghostreader/privacy.html">Ghost Reader privacy</a><a href="../../page-sonar/privacy.html">Sonar privacy</a><a href="index.html">Design studies</a></footer>
+<script>
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('arrived');observer.unobserve(entry.target)}}},{threshold:.1});
+document.querySelectorAll('.product-copy>* ,.ghost-visual img,.sonar-intro h2,.sonar-intro .promise,.sonar-description>*,.sonar-screen,.studio>*').forEach(el=>observer.observe(el));
+</script>
+</body></html>

@@ -1,5 +1,2 @@
-/* ── Nav scroll shadow ── */
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 8);
-}, { passive: true });
+const targets=document.querySelectorAll('.product-copy>*,.ghost-visual img,.sonar-intro>*,.sonar-description>*,.sonar-screen,.studio>*,.detail-section>*,.app-hero>*,.access>*');
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('arrived');observer.unobserve(entry.target)}}},{threshold:.1});targets.forEach(el=>observer.observe(el));}
