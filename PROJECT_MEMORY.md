@@ -82,3 +82,7 @@ Publishing runs `sh scripts/build-site.sh` and uploads `_site`, explicitly exclu
 ## Search visibility follow-up
 
 Track SEO and AI search visibility in `project_tracker.md`. Google states no special optimization is required for AI Overviews/AI Mode beyond SEO foundations: https://developers.google.com/search/docs/appearance/ai-features . Crawler access supports eligibility, not guaranteed indexing or citations. Search access and model-training access are separate controls; do not conflate them.
+
+## Live release
+
+2026-10-30: release d8d2030 deployed successfully by Pages run https://github.com/jancajas/jancajas.github.io/actions/runs/40984159774 . HTTPS byte comparison passed 11/11 resources including all three marketing pages, icon, robots/sitemap and existing legal/support routes. SEO and AI visibility audit remains pending.

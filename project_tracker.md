@@ -4,7 +4,7 @@ Updated: 2026-10-30. Durable sources: [PROJECT_MEMORY.md](PROJECT_MEMORY.md).
 
 ## Current task
 
-**Approved redesign implemented locally.** Owner selected the studio proposal and icon A. Homepage and both dedicated app pages rebuilt; local artifact verification in progress. No commit, push, deployment or App Store changes.
+**Redesign deployed and verified live.** Owner selected the studio proposal and icon A. Release `d8d2030` pushed to master; GitHub Pages run 40984159774 completed successfully. Homepage, app pages, icon, robots/sitemap and all five legal/support files match local release bytes over HTTPS. SEO/AI visibility follow-up remains pending; no App Store changes.
 
 ## Completed
 
@@ -45,7 +45,7 @@ Updated: 2026-10-30. Durable sources: [PROJECT_MEMORY.md](PROJECT_MEMORY.md).
 - [x] Optimize Ghost Reader images; self-host fonts with source/license records; add page metadata and favicon.
 - [ ] Keyboard, reduced motion, contrast, responsive and link checks across final production routes.
 - [x] Restrict deployment artifact using `scripts/build-site.sh`; workflow uploads `_site`.
-- [ ] Review final result, then deploy only when requested and verify live routes.
+- [x] Owner authorized deployment; push, Pages success and live routes verified.
 
 ## Known context and risks
 
@@ -94,4 +94,4 @@ Reference: [Google AI features and your website](https://developers.google.com/s
 
 ## Deployment — owner authorized 2026-10-30
 
-Commit/push and deployment verification in progress. Scope includes approved redesign, icon A, production assets, public-artifact build and project handoff files. Unrelated user screenshots, mascot variants, .DS_Store and .bg-shell files excluded from staging.
+Release commit `d8d2030e54e836909f2a965042cf0dad7061e02c` pushed to `origin/master`. [Pages run 40984159774](https://github.com/jancajas/jancajas.github.io/actions/runs/40984159774) completed **success**. HTTPS byte comparison verified **11/11** live resources: homepage, both app pages, robots.txt, sitemap.xml, icon A, and five existing legal/support files. Scope includes approved redesign, icon A, production assets, public-artifact build and project handoff files. Unrelated user screenshots, mascot variants, .DS_Store and .bg-shell files excluded from staging.
