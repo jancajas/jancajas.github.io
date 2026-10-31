@@ -89,7 +89,7 @@ Track SEO and AI search visibility in `project_tracker.md`. Google states no spe
 
 ## Taste Skill refinement — 2026-10-31
 
-Owner chose refinement of the current design: layout, screenshots, navigation and mobile UX. Taste Skill is now the primary visual-design authority in AGENTS.md. New controls are progressively enhanced: mobile menu remains visible without JS; screenshot links open actual image files without the dialog enhancement. Product routes and legal text remain preserved. Local review build: http://127.0.0.1:8767/ . This refinement is not yet deployed.
+Owner chose refinement of the current design: layout, screenshots, navigation and mobile UX. Taste Skill is now the primary visual-design authority in AGENTS.md. New controls are progressively enhanced: mobile menu remains visible without JS; screenshot links open actual image files without the dialog enhancement. Product routes and legal text remain preserved. Local review build: http://127.0.0.1:8767/ . This refinement was subsequently included in the Warm Editorial release below.
 
 ## Theme alternatives
 
@@ -98,4 +98,4 @@ Owner chose refinement of the current design: layout, screenshots, navigation an
 Warm Editorial uses Gambarino display type, Switzer body, paper `#f4f0e7`, espresso `#3a3027`, muted blue `#465e76`, sand `#e9e1d2` and blue-gray `#e0e6e8`. Primary source: `docs/redesign/theme-studies/editorial/`; full direction `editorial-report`, seed 2075621248. Implement in production source while preserving full app content, metadata, menu and screenshot viewer. Design archive/switching guide: `docs/redesign/DESIGN_DIRECTIONS.md`. Prior refinement source is saved under `docs/redesign/taste-refinement-2026-10-31/source/`.
 
 
-Warm Editorial applied and verified locally on 2026-10-31, built preview http://127.0.0.1:8769/ . Full report: `docs/redesign/warm-editorial-2026-10-31/README.md`. Not yet pushed/deployed; live release remains `d8d2030`. All theme previews remain preserved independently from production.
+Warm Editorial applied and deployed on 2026-10-31: release `0b77f693fb70d2a3b1845505495646f17d946d3e`, Pages run https://github.com/jancajas/jancajas.github.io/actions/runs/41169751610 completed success. Live HTTPS resources match the committed build 15/15 by SHA-256. Full report: `docs/redesign/warm-editorial-2026-10-31/README.md`; live evidence: `live-verification.json` alongside it. All theme previews remain preserved in GitHub independently from production and excluded from hosting. SEO/AI visibility backlog remains open.

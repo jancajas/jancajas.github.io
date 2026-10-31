@@ -18,7 +18,7 @@ Production files: root `index.html`, both app `index.html` files, `src/css/style
 
 Earlier refinement source saved in `../taste-refinement-2026-10-31/source/` before changing it. All three study pages, their CSS/font, image captures, reports and direction sheets remain unchanged.
 
-Local built-site preview: http://127.0.0.1:8769/ . Not pushed or deployed. Final verification is recorded below; see project tracker for current status.
+Local built-site preview: http://127.0.0.1:8769/ . Published 2026-10-31 as release `0b77f69`; Pages run 41169751610 succeeded. Final verification is recorded below; see project tracker for current status.
 
 ## Final verification
 
@@ -43,3 +43,10 @@ Top three problems (most visible first), each with the screenshot it shows in an
 2. `sonar/mobile-fold.jpg`: desktop workspace text is too small to read at phone scale. The screenshot viewer exposes the full-size capture with an honest source-link fallback; it serves as a product overview when closed.
 3. `ghost/tablet-fold.jpg`: stacked product hero is longer at tablet width. It preserves readable copy and a useful screenshot rather than squeezing two columns; actions remain before the image.
 No material visual regression found against the selected study. Stop after this round; no further aesthetic changes made to the approved composition.
+
+
+## Warm Editorial live release — 2026-10-31
+
+Owner authorized publishing. Release `0b77f693fb70d2a3b1845505495646f17d946d3e` pushed to `origin/master`. [GitHub Pages run 41169751610](https://github.com/jancajas/jancajas.github.io/actions/runs/41169751610) completed **success** for that exact commit. Verified live over HTTPS: **15/15** resources match the clean committed build by SHA-256: homepage, both app pages, CSS/JS, Gambarino/Switzer fonts, icon A, robots/sitemap and all five legal/support files. Verification record: `docs/redesign/warm-editorial-2026-10-31/live-verification.json`.
+
+All three theme studies and prior refinement source are committed in GitHub and excluded from the public artifact. Unrelated `.DS_Store`, `.bg-shell/`, three supplied historical screenshots and `hippo-big-nose.png` remain local and uncommitted. SEO/AI visibility work remains pending. No App Store changes.

@@ -1,0 +1,81 @@
+{
+  "release": "0b77f693fb70d2a3b1845505495646f17d946d3e",
+  "run": 41169751610,
+  "resources": [
+    {
+      "path": "index.html",
+      "sha256": "ace8aa37d57933620e5ff2468cc426aabc92f9bc1e0ff91b2c2ed906cd5d32bb",
+      "matches": true
+    },
+    {
+      "path": "page-ghostreader/index.html",
+      "sha256": "ec5148b7fed0feae80fe5ab0576298daa68feaa008944af4d0e6135124220f15",
+      "matches": true
+    },
+    {
+      "path": "page-sonar/index.html",
+      "sha256": "89d61f4446ac3bf0a2bf508084d2f174730796a17e18662bc2ea86f9e09f7258",
+      "matches": true
+    },
+    {
+      "path": "src/css/style.css",
+      "sha256": "e290f8a8750f92d4875c9be6a92376fb7411786b4d2c662a6fd3a6aa5a7f5c0e",
+      "matches": true
+    },
+    {
+      "path": "src/js/main.js",
+      "sha256": "7f2b0d71cd8a9c7cfb4a4792d8289676e870a964ecd6cc2161c397c4dafb27d6",
+      "matches": true
+    },
+    {
+      "path": "src/fonts/gambarino.woff2",
+      "sha256": "73b51a4e355f266dd9b17b78fe36a5ac66606d2093b03ead2f58b75207c4be70",
+      "matches": true
+    },
+    {
+      "path": "src/fonts/switzer.woff2",
+      "sha256": "ddd9595560c35725e00d01667ce9bee519d245620e610844f0dd149df10b5d5f",
+      "matches": true
+    },
+    {
+      "path": "src/images/hippo-mark.png",
+      "sha256": "18ae2765498f45a6c1ab0cba2ac0b59faba20be3c0dbae526822a70ca0df52a8",
+      "matches": true
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "2ce7aec9ba9891e16a9776d939f4b8e7bdda6103ca084e13cbc6ad8e01aa6e85",
+      "matches": true
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "4b61d2162ca041c4e3e1b2451cdf7b71e0f46c747e9321b487cd5e0583a7331c",
+      "matches": true
+    },
+    {
+      "path": "page-ghostreader/privacy.html",
+      "sha256": "41e31842de51b45ff9f25e3711774da7f1928dae3284ae5c57e9d13b004389a7",
+      "matches": true
+    },
+    {
+      "path": "page-ghostreader/terms.html",
+      "sha256": "fa0449bb2d64cb6e7a42ef228d13c17e582bb93f5dd36f6378220ac3d784a8d6",
+      "matches": true
+    },
+    {
+      "path": "page-sonar/privacy.html",
+      "sha256": "ae4f5ebfc8e5a9cd9589071dbc0deceee7d0f01b7da1c963ad620637766dc92b",
+      "matches": true
+    },
+    {
+      "path": "page-sonar/terms.html",
+      "sha256": "31e7336f23eb18dabcbd31a603172415d9a4f5d3ffcc9ee766472049c0dd774d",
+      "matches": true
+    },
+    {
+      "path": "page-sonar/support.html",
+      "sha256": "c9601fe0d785e1d92ce9cfad30aa4190b340d9a81da0ccf02447abad2b39dc15",
+      "matches": true
+    }
+  ]
+}

@@ -4,7 +4,7 @@ Updated: 2026-10-31. Durable sources: [PROJECT_MEMORY.md](PROJECT_MEMORY.md).
 
 ## Current task
 
-**Warm Editorial deployment authorized; release in progress.** Owner chose the warm theme and explicitly asked to retain all three previews for possible future switches. Applied across the homepage and both dedicated app pages while keeping the previous UX refinements. Live release remains `d8d2030`; this theme update has not been pushed or deployed. SEO/AI visibility follow-up remains pending; no App Store changes.
+**Warm Editorial is live and verified.** Release `0b77f69` deployed successfully via GitHub Pages run 41169751610. HTTPS byte comparison passed 15/15 release resources. All three theme previews and the prior refinement source are preserved in GitHub. SEO/AI visibility work remains pending; no App Store changes.
 
 ## Completed
 
@@ -113,11 +113,18 @@ Owner requested distinct color/type/layout alternatives. Built Quiet Studio, Bol
 - [x] Apply selected palette, Gambarino/Switzer type and editorial campaign composition across homepage and both app pages, retaining the earlier menu/viewer, full FAQ/access copy, metadata and icon A.
 - [x] Save prior refinement source snapshot, all theme previews/direction sheets/screenshots, and a [design archive/switching guide](docs/redesign/DESIGN_DIRECTIONS.md).
 - [x] Build public artifact; inspect all three final pages at 1440/768/390: **0 FAIL**, homepage 3 WARN, app pages 2 WARN each. All 18 final screenshots visually reviewed. Source lint 0 FAIL/0 WARN. All local targets resolve in 8 public pages; legal/support files unchanged 5/5. Menu/dialog Escape focus return and reduced-motion suppression verified.
-- [ ] Publish selected theme. **Not pushed or deployed.** Live still uses the earlier studio release. SEO/AI visibility work remains pending.
+- [x] Publish selected theme. Release `0b77f69` deployed successfully; live HTTPS resources verified 15/15. SEO/AI visibility work remains pending.
 
 Built preview: http://127.0.0.1:8769/ . Preserved theme comparison: http://127.0.0.1:8768/docs/redesign/theme-studies/ . [Full verification, warnings and subjective critique](docs/redesign/warm-editorial-2026-10-31/README.md). No new App Store claims or changes.
 
 
 ## Warm Editorial release — 2026-10-31
 
-Owner explicitly requested pushing the selected theme live. Release includes the three production marketing pages, shared CSS/JS, self-hosted Gambarino, all three preserved theme studies, prior refinement source, verification artifacts and project handoff notes. Unrelated local files excluded. GitHub Pages and HTTPS verification pending; do not treat the local preview as live evidence.
+Owner explicitly requested pushing the selected theme live. Release includes the three production marketing pages, shared CSS/JS, self-hosted Gambarino, all three preserved theme studies, prior refinement source, verification artifacts and project handoff notes. Unrelated local files excluded. GitHub Pages and HTTPS verification complete; see the live release record below.
+
+
+## Warm Editorial live release — 2026-10-31
+
+Owner authorized publishing. Release `0b77f693fb70d2a3b1845505495646f17d946d3e` pushed to `origin/master`. [GitHub Pages run 41169751610](https://github.com/jancajas/jancajas.github.io/actions/runs/41169751610) completed **success** for that exact commit. Verified live over HTTPS: **15/15** resources match the clean committed build by SHA-256: homepage, both app pages, CSS/JS, Gambarino/Switzer fonts, icon A, robots/sitemap and all five legal/support files. Verification record: `docs/redesign/warm-editorial-2026-10-31/live-verification.json`.
+
+All three theme studies and prior refinement source are committed in GitHub and excluded from the public artifact. Unrelated `.DS_Store`, `.bg-shell/`, three supplied historical screenshots and `hippo-big-nose.png` remain local and uncommitted. SEO/AI visibility work remains pending. No App Store changes.
