@@ -1,0 +1,1605 @@
+{
+ "url": "http://127.0.0.1:8767/",
+ "at": "2026-10-31T02:47:58.075Z",
+ "allow": [
+  "few-pictures"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.71,
+    1,
+    0.59,
+    0.68
+   ],
+   "motion": {
+    "elements": 15,
+    "css": 15,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2788,
+     "screens": 3.1,
+     "words": 152,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "current-home.webp",
+      "current-reader.webp",
+      "app-screenshot-dark.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your books. Out loud.",
+     "words": 4,
+     "chars": 21,
+     "lines": 2,
+     "size": 77.8,
+     "vw": 5.4,
+     "font": "Switzer",
+     "weight": 500,
+     "tracking": -0.045,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.39,
+     "top": 551,
+     "tag": "p",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Small studio. Thoughtful software.",
+     "words": 4,
+     "lines": 2,
+     "size": 64.8,
+     "font": "Switzer"
+    },
+    "headings": [
+     {
+      "text": "Small studio. Thoughtful software.",
+      "words": 4,
+      "chars": 34,
+      "lines": 2,
+      "size": 64.8,
+      "vw": 4.5,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 136,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Ghost Reader Live",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 493,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your books. Out loud.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 551,
+      "tag": "p",
+      "kind": "heading"
+     },
+     {
+      "text": "Sonar",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1179,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A voice studio. On your Mac.",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1236,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "A little about us.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2395,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      18,
+      21,
+      23,
+      32,
+      44,
+      65,
+      78
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.2
+     },
+     "measureChars": 45,
+     "max": {
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Switzer",
+      "text": "Your books.Out loud."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafbf9",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.2,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e6f0f3",
+       "top": 347,
+       "hsl": {
+        "h": 194,
+        "s": 0.35,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#10151e",
+       "top": 1109,
+       "hsl": {
+        "h": 219,
+        "s": 0.3,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#203033",
+       "share": 0.75
+      },
+      {
+       "color": "#f4f6fa",
+       "share": 0.22
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      },
+      {
+       "color": "#10151e",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#fafbf9",
+      "hsl": {
+       "h": 90,
+       "s": 0.2,
+       "l": 0.98
+      },
+      "fg": "#203033"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore Ghost Reader"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.12
+     },
+     {
+      "type": "img",
+      "ratio": 0.11
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2788,
+    "margins": {
+     "left": 72,
+     "right": 72
+    },
+    "sections": [
+     {
+      "sel": "header.introduction",
+      "tag": "header",
+      "top": 80,
+      "height": 267,
+      "words": 24,
+      "media": 0,
+      "middle": 362,
+      "heading": {
+       "text": "Small studio.",
+       "size": 65,
+       "tag": "h1"
+      },
+      "left": 72,
+      "right": 76,
+      "textLeft": 72,
+      "textRight": 76,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#ghost-reader.ghost.product",
+      "tag": "section",
+      "top": 347,
+      "height": 750,
+      "words": 39,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your books.",
+       "size": 78,
+       "tag": "p"
+      },
+      "left": 72,
+      "right": 988,
+      "textLeft": 72,
+      "textRight": 988,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#sonar.sonar.product",
+      "tag": "section",
+      "top": 1109,
+      "height": 1174,
+      "words": 38,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "A voice studio.",
+       "size": 78,
+       "tag": "p"
+      },
+      "left": 72,
+      "right": 220,
+      "textLeft": 72,
+      "textRight": 256,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#studio.studio",
+      "tag": "section",
+      "top": 2295,
+      "height": 393,
+      "words": 30,
+      "media": 0,
+      "middle": 435,
+      "heading": {
+       "text": "A little about us.",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 175,
+      "textLeft": 72,
+      "textRight": 175,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Small studio. Thoughtful software.",
+      "size": 65,
+      "top": 136,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 72,
+      "n": 6
+     },
+     {
+      "x": 785,
+      "n": 2
+     },
+     {
+      "x": 984,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.08,
+    "voidBox": {
+     "x": 480,
+     "y": 300,
+     "w": 180,
+     "h": 600
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.7,
+    0.87,
+    0.63
+   ],
+   "motion": {
+    "elements": 14,
+    "css": 14,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2549,
+     "screens": 2.5,
+     "words": 152,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "current-home.webp",
+      "app-screenshot-dark.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your books. Out loud.",
+     "words": 4,
+     "chars": 21,
+     "lines": 2,
+     "size": 52,
+     "vw": 6.8,
+     "font": "Switzer",
+     "weight": 500,
+     "tracking": -0.045,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.43,
+     "top": 551,
+     "tag": "p",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Small studio. Thoughtful software.",
+     "words": 4,
+     "lines": 2,
+     "size": 38,
+     "font": "Switzer"
+    },
+    "headings": [
+     {
+      "text": "Small studio. Thoughtful software.",
+      "words": 4,
+      "chars": 34,
+      "lines": 2,
+      "size": 38,
+      "vw": 4.9,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 115,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Ghost Reader Live",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 493,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your books. Out loud.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 52,
+      "vw": 6.8,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 551,
+      "tag": "p",
+      "kind": "heading"
+     },
+     {
+      "text": "Sonar",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 1153,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A voice studio. On your Mac.",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 52,
+      "vw": 6.8,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 1210,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "A little about us.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 2087,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      18,
+      21,
+      23,
+      32,
+      36,
+      38,
+      52
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.2
+     },
+     "measureChars": 29,
+     "max": {
+      "size": 52,
+      "vw": 6.8,
+      "font": "Switzer",
+      "text": "Your books.Out loud."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafbf9",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.2,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e6f0f3",
+       "top": 381,
+       "hsl": {
+        "h": 194,
+        "s": 0.35,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#10151e",
+       "top": 1063,
+       "hsl": {
+        "h": 219,
+        "s": 0.3,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#203033",
+       "share": 0.75
+      },
+      {
+       "color": "#f4f6fa",
+       "share": 0.22
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      },
+      {
+       "color": "#10151e",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#fafbf9",
+      "hsl": {
+       "h": 90,
+       "s": 0.2,
+       "l": 0.98
+      },
+      "fg": "#203033"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore Ghost Reader"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.16
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 2549,
+    "margins": {
+     "left": 38,
+     "right": 38
+    },
+    "sections": [
+     {
+      "sel": "header.introduction",
+      "tag": "header",
+      "top": 80,
+      "height": 301,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Small studio.",
+       "size": 38,
+       "tag": "h1"
+      },
+      "left": 38,
+      "right": 350,
+      "textLeft": 38,
+      "textRight": 350,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#ghost-reader.ghost.product",
+      "tag": "section",
+      "top": 381,
+      "height": 670,
+      "words": 39,
+      "media": 1,
+      "middle": 78,
+      "heading": {
+       "text": "Your books.",
+       "size": 52,
+       "tag": "p"
+      },
+      "left": 38,
+      "right": 82,
+      "textLeft": 38,
+      "textRight": 404,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#sonar.sonar.product",
+      "tag": "section",
+      "top": 1063,
+      "height": 912,
+      "words": 38,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "A voice studio.",
+       "size": 52,
+       "tag": "p"
+      },
+      "left": 38,
+      "right": 38,
+      "textLeft": 38,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#studio.studio",
+      "tag": "section",
+      "top": 1987,
+      "height": 462,
+      "words": 30,
+      "media": 0,
+      "middle": 136,
+      "heading": {
+       "text": "A little about us.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 67,
+      "textLeft": 38,
+      "textRight": 67,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Small studio. Thoughtful software.",
+      "size": 38,
+      "top": 115,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 38,
+      "n": 7
+     },
+     {
+      "x": 401,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.76,
+    1,
+    0.86,
+    0.75
+   ],
+   "motion": {
+    "elements": 14,
+    "css": 14,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 2825,
+     "screens": 3.3,
+     "words": 148,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "current-home.webp",
+      "app-screenshot-dark.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your books. Out loud.",
+     "words": 4,
+     "chars": 21,
+     "lines": 2,
+     "size": 44,
+     "vw": 11.3,
+     "font": "Switzer",
+     "weight": 500,
+     "tracking": -0.045,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.85,
+     "top": 460,
+     "tag": "p",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Small studio. Thoughtful software.",
+     "words": 4,
+     "lines": 2,
+     "size": 34.7,
+     "font": "Switzer"
+    },
+    "headings": [
+     {
+      "text": "Small studio. Thoughtful software.",
+      "words": 4,
+      "chars": 34,
+      "lines": 2,
+      "size": 34.7,
+      "vw": 8.9,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 108,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Ghost Reader Live",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 407,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your books. Out loud.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 460,
+      "tag": "p",
+      "kind": "heading"
+     },
+     {
+      "text": "Sonar",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 1515,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A voice studio. On your Mac.",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 1568,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "A little about us.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2331,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      20,
+      21,
+      28,
+      35,
+      36,
+      44
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.2
+     },
+     "measureChars": 35,
+     "max": {
+      "size": 44,
+      "vw": 11.3,
+      "font": "Switzer",
+      "text": "Your books.Out loud."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafbf9",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.2,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e6f0f3",
+       "top": 365,
+       "hsl": {
+        "h": 194,
+        "s": 0.35,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#10151e",
+       "top": 1473,
+       "hsl": {
+        "h": 219,
+        "s": 0.3,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#203033",
+       "share": 0.74
+      },
+      {
+       "color": "#f4f6fa",
+       "share": 0.22
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      },
+      {
+       "color": "#10151e",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#fafbf9",
+      "hsl": {
+       "h": 90,
+       "s": 0.2,
+       "l": 0.98
+      },
+      "fg": "#203033"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Menu",
+      "Explore Ghost Reader"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 2825,
+    "margins": {
+     "left": 22,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "header.introduction",
+      "tag": "header",
+      "top": 76,
+      "height": 289,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Small studio.",
+       "size": 35,
+       "tag": "h1"
+      },
+      "left": 22,
+      "right": 25,
+      "textLeft": 22,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#ghost-reader.ghost.product",
+      "tag": "section",
+      "top": 365,
+      "height": 1101,
+      "words": 39,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your books.",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 30,
+      "right": 50,
+      "textLeft": 30,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#sonar.sonar.product",
+      "tag": "section",
+      "top": 1473,
+      "height": 785,
+      "words": 38,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "A voice studio.",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 30,
+      "right": 30,
+      "textLeft": 30,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#studio.studio",
+      "tag": "section",
+      "top": 2266,
+      "height": 395,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A little about us.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 28,
+      "textLeft": 22,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 2661,
+      "height": 164,
+      "words": 10,
+      "media": 0,
+      "middle": 50,
+      "heading": null,
+      "left": 22,
+      "right": 22,
+      "textLeft": 22,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Small studio. Thoughtful software.",
+      "size": 35,
+      "top": 108,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 22,
+      "n": 9
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 15 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/private/tmp/hippo-taste-delivery-home/desktop-fold.jpg",
+   "pages": [
+    "/private/tmp/hippo-taste-delivery-home/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/private/tmp/hippo-taste-delivery-home/tablet-fold.jpg",
+   "pages": [
+    "/private/tmp/hippo-taste-delivery-home/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/private/tmp/hippo-taste-delivery-home/mobile-fold.jpg",
+   "pages": [
+    "/private/tmp/hippo-taste-delivery-home/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

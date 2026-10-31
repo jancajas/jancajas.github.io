@@ -1,0 +1,1 @@
+Gambarino by Indian Type Foundry via Fontshare. Downloaded from official CSS endpoint 2026-10-31 for preview use. License/source: https://www.fontshare.com/fonts/gambarino and https://www.fontshare.com/licenses/itf-ffl . Switzer is reused from the project.

@@ -1,10 +1,10 @@
 # BigHippo Labs project tracker
 
-Updated: 2026-10-30. Durable sources: [PROJECT_MEMORY.md](PROJECT_MEMORY.md).
+Updated: 2026-10-31. Durable sources: [PROJECT_MEMORY.md](PROJECT_MEMORY.md).
 
 ## Current task
 
-**Redesign deployed and verified live.** Owner selected the studio proposal and icon A. Release `d8d2030` pushed to master; GitHub Pages run 40984159774 completed successfully. Homepage, app pages, icon, robots/sitemap and all five legal/support files match local release bytes over HTTPS. SEO/AI visibility follow-up remains pending; no App Store changes.
+**Warm Editorial deployment authorized; release in progress.** Owner chose the warm theme and explicitly asked to retain all three previews for possible future switches. Applied across the homepage and both dedicated app pages while keeping the previous UX refinements. Live release remains `d8d2030`; this theme update has not been pushed or deployed. SEO/AI visibility follow-up remains pending; no App Store changes.
 
 ## Completed
 
@@ -95,3 +95,29 @@ Reference: [Google AI features and your website](https://developers.google.com/s
 ## Deployment — owner authorized 2026-10-30
 
 Release commit `d8d2030e54e836909f2a965042cf0dad7061e02c` pushed to `origin/master`. [Pages run 40984159774](https://github.com/jancajas/jancajas.github.io/actions/runs/40984159774) completed **success**. HTTPS byte comparison verified **11/11** live resources: homepage, both app pages, robots.txt, sitemap.xml, icon A, and five existing legal/support files. Scope includes approved redesign, icon A, production assets, public-artifact build and project handoff files. Unrelated user screenshots, mascot variants, .DS_Store and .bg-shell files excluded from staging.
+
+## Taste Skill refinement — 2026-10-31
+
+Owner selected preserve-brand refinement of layout, screenshots, navigation and mobile UX. Implemented compact progressive mobile menu, active page links, screenshot viewer, larger mobile player, reserved image dimensions, app-page jump links and local terms/privacy links. Taste Skill is the primary design authority in AGENTS.md.
+
+Local review: http://127.0.0.1:8767/ . **Not pushed/deployed.** Prior live release remains unchanged. Full brief, prompt example, final critique, inspector exceptions and reports: `docs/redesign/taste-refinement-2026-10-31/README.md`. Lint 0 FAIL/0 WARN; browser inspector 0 FAIL with documented picture-count exception, homepage 2 WARN/app pages 1 WARN. Three widths checked, no overflow; local resources resolve in eight public HTML pages. Menu/dialog Escape verified; final screenshots visually inspected. SEO/AI search work remains pending.
+
+## Three theme studies — 2026-10-31
+
+Owner requested distinct color/type/layout alternatives. Built Quiet Studio, Bold Independent and Warm Editorial, each with homepage and dedicated Ghost Reader/Sonar preview pages. Comparison: http://127.0.0.1:8768/docs/redesign/theme-studies/ . Files/verification/critique: `docs/redesign/theme-studies/README.md`. Real screenshots and approved icon preserved. Owner selected **Warm Editorial** and requested all previews retained; no deployment. Earlier refinement source archived before applying the selected theme.
+
+
+## Warm Editorial implementation — 2026-10-31
+
+- [x] Owner selected Warm Editorial; preserve all three theme studies for future reference/switches.
+- [x] Apply selected palette, Gambarino/Switzer type and editorial campaign composition across homepage and both app pages, retaining the earlier menu/viewer, full FAQ/access copy, metadata and icon A.
+- [x] Save prior refinement source snapshot, all theme previews/direction sheets/screenshots, and a [design archive/switching guide](docs/redesign/DESIGN_DIRECTIONS.md).
+- [x] Build public artifact; inspect all three final pages at 1440/768/390: **0 FAIL**, homepage 3 WARN, app pages 2 WARN each. All 18 final screenshots visually reviewed. Source lint 0 FAIL/0 WARN. All local targets resolve in 8 public pages; legal/support files unchanged 5/5. Menu/dialog Escape focus return and reduced-motion suppression verified.
+- [ ] Publish selected theme. **Not pushed or deployed.** Live still uses the earlier studio release. SEO/AI visibility work remains pending.
+
+Built preview: http://127.0.0.1:8769/ . Preserved theme comparison: http://127.0.0.1:8768/docs/redesign/theme-studies/ . [Full verification, warnings and subjective critique](docs/redesign/warm-editorial-2026-10-31/README.md). No new App Store claims or changes.
+
+
+## Warm Editorial release — 2026-10-31
+
+Owner explicitly requested pushing the selected theme live. Release includes the three production marketing pages, shared CSS/JS, self-hosted Gambarino, all three preserved theme studies, prior refinement source, verification artifacts and project handoff notes. Unrelated local files excluded. GitHub Pages and HTTPS verification pending; do not treat the local preview as live evidence.

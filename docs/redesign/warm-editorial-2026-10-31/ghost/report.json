@@ -1,0 +1,1669 @@
+{
+ "url": "http://127.0.0.1:8769/page-ghostreader/",
+ "at": "2026-10-31T04:34:43.902Z",
+ "allow": [
+  "few-pictures"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.89,
+    0.34,
+    0.64,
+    0.66
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 20,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3334,
+     "screens": 3.7,
+     "words": 184,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "current-home.webp",
+      "current-reader.webp",
+      "current-library.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your books. Out loud.",
+     "words": 4,
+     "chars": 21,
+     "lines": 2,
+     "size": 86,
+     "vw": 6,
+     "font": "Gambarino",
+     "weight": 400,
+     "tracking": -0.045,
+     "leading": 1.03,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.41,
+     "top": 245,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your books. Out loud.",
+     "words": 4,
+     "lines": 2,
+     "size": 86,
+     "font": "Gambarino"
+    },
+    "headings": [
+     {
+      "text": "Your books. Out loud.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 86,
+      "vw": 6,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 245,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Listen. Read along.",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1113,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your next chapter.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.41,
+      "top": 1904,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Start listening.",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2496,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good to know.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 2915,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 0.93,
+       "mono": false
+      },
+      {
+       "family": "Gambarino",
+       "share": 0.07,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      18,
+      22,
+      58,
+      86
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.9
+     },
+     "measureChars": 52,
+     "max": {
+      "size": 86,
+      "vw": 6,
+      "font": "Gambarino",
+      "text": "Your books.Out loud."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f0e7",
+     "bodyBgHsl": {
+      "h": 42,
+      "s": 0.37,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e9e1d2",
+       "top": 88,
+       "hsl": {
+        "h": 39,
+        "s": 0.34,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#e0e6e8",
+       "top": 2421,
+       "hsl": {
+        "h": 195,
+        "s": 0.15,
+        "l": 0.89
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#3a3027",
+       "share": 0.98
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#465e76",
+      "hsl": {
+       "h": 210,
+       "s": 0.26,
+       "l": 0.37
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 0,
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Get Ghost Reader"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.1
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "switzer",
+     "gambarino"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3334,
+    "margins": {
+     "left": 72,
+     "right": 72
+    },
+    "sections": [
+     {
+      "sel": "header.app-hero",
+      "tag": "header",
+      "top": 88,
+      "height": 670,
+      "words": 34,
+      "media": 1,
+      "middle": 470,
+      "heading": {
+       "text": "Your books.",
+       "size": 86,
+       "tag": "h1"
+      },
+      "left": 72,
+      "right": 239,
+      "textLeft": 72,
+      "textRight": 957,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.detail-section",
+      "tag": "section",
+      "top": 838,
+      "height": 792,
+      "words": 35,
+      "media": 1,
+      "middle": 464,
+      "heading": {
+       "text": "Listen. Read along.",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 239,
+      "textLeft": 72,
+      "textRight": 952,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.detail-section.reverse",
+      "tag": "section",
+      "top": 1630,
+      "height": 792,
+      "words": 34,
+      "media": 1,
+      "middle": 297,
+      "heading": {
+       "text": "Your next chapter.",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 239,
+      "right": 223,
+      "textLeft": 785,
+      "textRight": 223,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#access.access",
+      "tag": "section",
+      "top": 2421,
+      "height": 414,
+      "words": 49,
+      "media": 0,
+      "middle": 408,
+      "heading": {
+       "text": "Start listening.",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 198,
+      "textLeft": 72,
+      "textRight": 198,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#questions.faq",
+      "tag": "section",
+      "top": 2835,
+      "height": 398,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Good to know.",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 242,
+      "right": 306,
+      "textLeft": 242,
+      "textRight": 306,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your books. Out loud.",
+      "size": 86,
+      "top": 245,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 72,
+      "n": 7
+     },
+     {
+      "x": 785,
+      "n": 4
+     },
+     {
+      "x": 242,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.18,
+    "voidBox": {
+     "x": 540,
+     "y": 120,
+     "w": 360,
+     "h": 660
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.97,
+    0.56,
+    0.72,
+    0.69
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 20,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 3618,
+     "screens": 3.5,
+     "words": 184,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "current-home.webp",
+      "current-reader.webp",
+      "current-library.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your books. Out loud.",
+     "words": 4,
+     "chars": 21,
+     "lines": 2,
+     "size": 48,
+     "vw": 6.3,
+     "font": "Gambarino",
+     "weight": 400,
+     "tracking": -0.045,
+     "leading": 1.03,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.81,
+     "top": 210,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your books. Out loud.",
+     "words": 4,
+     "lines": 2,
+     "size": 48,
+     "font": "Gambarino"
+    },
+    "headings": [
+     {
+      "text": "Your books. Out loud.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 210,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Listen. Read along.",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 1511,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your next chapter.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 2199,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Start listening.",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2749,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good to know.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3222,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 0.93,
+       "mono": false
+      },
+      {
+       "family": "Gambarino",
+       "share": 0.07,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      18,
+      22,
+      36,
+      48
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.9
+     },
+     "measureChars": 35,
+     "max": {
+      "size": 48,
+      "vw": 6.3,
+      "font": "Gambarino",
+      "text": "Your books.Out loud."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f0e7",
+     "bodyBgHsl": {
+      "h": 42,
+      "s": 0.37,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e9e1d2",
+       "top": 88,
+       "hsl": {
+        "h": 39,
+        "s": 0.34,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#e0e6e8",
+       "top": 2674,
+       "hsl": {
+        "h": 195,
+        "s": 0.15,
+        "l": 0.89
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#3a3027",
+       "share": 0.98
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#465e76",
+      "hsl": {
+       "h": 210,
+       "s": 0.26,
+       "l": 0.37
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 0,
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Get Ghost Reader"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.14
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "switzer",
+     "gambarino"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 3618,
+    "margins": {
+     "left": 38,
+     "right": 38
+    },
+    "sections": [
+     {
+      "sel": "header.app-hero",
+      "tag": "header",
+      "top": 88,
+      "height": 1102,
+      "words": 34,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your books.",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 38,
+      "right": 260,
+      "textLeft": 38,
+      "textRight": 319,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.detail-section",
+      "tag": "section",
+      "top": 1270,
+      "height": 702,
+      "words": 35,
+      "media": 1,
+      "middle": 85,
+      "heading": {
+       "text": "Listen. Read along.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 77,
+      "textLeft": 38,
+      "textRight": 410,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.detail-section.reverse",
+      "tag": "section",
+      "top": 1972,
+      "height": 702,
+      "words": 34,
+      "media": 1,
+      "middle": 80,
+      "heading": {
+       "text": "Your next chapter.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 77,
+      "right": 42,
+      "textLeft": 405,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#access.access",
+      "tag": "section",
+      "top": 2674,
+      "height": 468,
+      "words": 49,
+      "media": 0,
+      "middle": 190,
+      "heading": {
+       "text": "Start listening.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 42,
+      "textLeft": 38,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#questions.faq",
+      "tag": "section",
+      "top": 3142,
+      "height": 376,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Good to know.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 75,
+      "textLeft": 38,
+      "textRight": 75,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your books. Out loud.",
+      "size": 48,
+      "top": 210,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 38,
+      "n": 9
+     },
+     {
+      "x": 405,
+      "n": 2
+     },
+     {
+      "x": 419,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.98,
+    0.86,
+    0.66,
+    0.9,
+    0.75
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 20,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 3918,
+     "screens": 4.6,
+     "words": 180,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "current-home.webp",
+      "current-reader.webp",
+      "current-library.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your books. Out loud.",
+     "words": 4,
+     "chars": 21,
+     "lines": 2,
+     "size": 48,
+     "vw": 12.3,
+     "font": "Gambarino",
+     "weight": 400,
+     "tracking": -0.045,
+     "leading": 1.03,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 175,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your books. Out loud.",
+     "words": 4,
+     "lines": 2,
+     "size": 48,
+     "font": "Gambarino"
+    },
+    "headings": [
+     {
+      "text": "Ghost Reader Live",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 118,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Your books. Out loud.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 175,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Listen. Read along.",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1243,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your next chapter.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2113,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Start listening.",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3005,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good to know.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Gambarino",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3476,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Can I listen offline?",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3550,
+      "tag": "summary",
+      "kind": "heading"
+     },
+     {
+      "text": "Where can I get help?",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3627,
+      "tag": "summary",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 0.93,
+       "mono": false
+      },
+      {
+       "family": "Gambarino",
+       "share": 0.07,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      18,
+      22,
+      36,
+      48
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.9
+     },
+     "measureChars": 38,
+     "max": {
+      "size": 48,
+      "vw": 12.3,
+      "font": "Gambarino",
+      "text": "Your books.Out loud."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f0e7",
+     "bodyBgHsl": {
+      "h": 42,
+      "s": 0.37,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e9e1d2",
+       "top": 76,
+       "hsl": {
+        "h": 39,
+        "s": 0.34,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#e0e6e8",
+       "top": 2950,
+       "hsl": {
+        "h": 195,
+        "s": 0.15,
+        "l": 0.89
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#3a3027",
+       "share": 0.97
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#465e76",
+      "hsl": {
+       "h": 210,
+       "s": 0.26,
+       "l": 0.37
+      },
+      "fg": "#3a3027"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 0,
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Menu",
+      "Get Ghost Reader"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.2
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "switzer",
+     "gambarino"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 3918,
+    "margins": {
+     "left": 22,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "header.app-hero",
+      "tag": "header",
+      "top": 76,
+      "height": 991,
+      "words": 34,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your books.",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 30,
+      "textLeft": 24,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.detail-section",
+      "tag": "section",
+      "top": 1183,
+      "height": 870,
+      "words": 35,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Listen. Read along.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 47,
+      "textLeft": 24,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.detail-section.reverse",
+      "tag": "section",
+      "top": 2053,
+      "height": 897,
+      "words": 34,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your next chapter.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 33,
+      "textLeft": 24,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#access.access",
+      "tag": "section",
+      "top": 2950,
+      "height": 466,
+      "words": 49,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start listening.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 31,
+      "textLeft": 24,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#questions.faq",
+      "tag": "section",
+      "top": 3416,
+      "height": 336,
+      "words": 41,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Good to know.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 29,
+      "textLeft": 22,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 3752,
+      "height": 166,
+      "words": 10,
+      "media": 0,
+      "middle": 86,
+      "heading": null,
+      "left": 22,
+      "right": 22,
+      "textLeft": 22,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your books. Out loud.",
+      "size": 48,
+      "top": 175,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 22,
+      "n": 13
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #f4f0e7).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/private/tmp/hippo-warm-audit-ghost/desktop-fold.jpg",
+   "pages": [
+    "/private/tmp/hippo-warm-audit-ghost/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/private/tmp/hippo-warm-audit-ghost/tablet-fold.jpg",
+   "pages": [
+    "/private/tmp/hippo-warm-audit-ghost/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/private/tmp/hippo-warm-audit-ghost/mobile-fold.jpg",
+   "pages": [
+    "/private/tmp/hippo-warm-audit-ghost/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

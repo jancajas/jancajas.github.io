@@ -1,0 +1,1487 @@
+{
+ "url": "http://127.0.0.1:8767/page-sonar/",
+ "at": "2026-10-31T02:49:19.764Z",
+ "allow": [
+  "few-pictures"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.96,
+    0.73,
+    0.55,
+    0.51
+   ],
+   "motion": {
+    "elements": 17,
+    "css": 17,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3155,
+     "screens": 3.5,
+     "words": 166,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "app-screenshot-dark.webp",
+      "app-screenshot-light.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "A voice studio. On your Mac.",
+     "words": 6,
+     "chars": 28,
+     "lines": 2,
+     "size": 86.4,
+     "vw": 6,
+     "font": "Switzer",
+     "weight": 500,
+     "tracking": -0.045,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.41,
+     "top": 206,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "A voice studio. On your Mac.",
+     "words": 6,
+     "lines": 2,
+     "size": 86.4,
+     "font": "Switzer"
+    },
+    "headings": [
+     {
+      "text": "A voice studio. On your Mac.",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 86.4,
+      "vw": 6,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 206,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Find the right voice.",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1690,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From text to audio.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2226,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good to know.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 2619,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      18,
+      21,
+      24,
+      42,
+      58,
+      86
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.9
+     },
+     "measureChars": 52,
+     "max": {
+      "size": 86.4,
+      "vw": 6,
+      "font": "Switzer",
+      "text": "A voice studio.On your Mac."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafbf9",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.2,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#10151e",
+       "top": 80,
+       "hsl": {
+        "h": 219,
+        "s": 0.3,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#edf0eb",
+       "top": 2151,
+       "hsl": {
+        "h": 96,
+        "s": 0.14,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#203033",
+       "share": 0.83
+      },
+      {
+       "color": "#f4f6fa",
+       "share": 0.14
+      },
+      {
+       "color": "#10151e",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#fafbf9",
+      "hsl": {
+       "h": 90,
+       "s": 0.2,
+       "l": 0.98
+      },
+      "fg": "#203033"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 0,
+     "height": 55,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Get Sonar for Mac"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.31
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3155,
+    "margins": {
+     "left": 72,
+     "right": 72
+    },
+    "sections": [
+     {
+      "sel": "header.app-hero",
+      "tag": "header",
+      "top": 80,
+      "height": 1312,
+      "words": 37,
+      "media": 0,
+      "middle": 206,
+      "heading": {
+       "text": "A voice studio.",
+       "size": 86,
+       "tag": "h1"
+      },
+      "left": 72,
+      "right": 243,
+      "textLeft": 72,
+      "textRight": 243,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.detail-section",
+      "tag": "section",
+      "top": 1472,
+      "height": 680,
+      "words": 40,
+      "media": 1,
+      "middle": 285,
+      "heading": {
+       "text": "Find the right voice.",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 97,
+      "textLeft": 72,
+      "textRight": 915,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#access.access",
+      "tag": "section",
+      "top": 2151,
+      "height": 388,
+      "words": 50,
+      "media": 0,
+      "middle": 398,
+      "heading": {
+       "text": "From text to audio.",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 189,
+      "textLeft": 72,
+      "textRight": 189,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#questions.faq",
+      "tag": "section",
+      "top": 2539,
+      "height": 515,
+      "words": 68,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Good to know.",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 242,
+      "right": 268,
+      "textLeft": 242,
+      "textRight": 268,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "A voice studio. On your Mac.",
+      "size": 86,
+      "top": 206,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 72,
+      "n": 6
+     },
+     {
+      "x": 242,
+      "n": 3
+     },
+     {
+      "x": 785,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 1320,
+     "y": 120,
+     "w": 120,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.97,
+    0.74,
+    0.61
+   ],
+   "motion": {
+    "elements": 17,
+    "css": 17,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2571,
+     "screens": 2.5,
+     "words": 166,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "app-screenshot-dark.webp",
+      "app-screenshot-light.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "A voice studio. On your Mac.",
+     "words": 6,
+     "chars": 28,
+     "lines": 2,
+     "size": 48,
+     "vw": 6.3,
+     "font": "Switzer",
+     "weight": 500,
+     "tracking": -0.045,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.41,
+     "top": 232,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "A voice studio. On your Mac.",
+     "words": 6,
+     "lines": 2,
+     "size": 48,
+     "font": "Switzer"
+    },
+    "headings": [
+     {
+      "text": "A voice studio. On your Mac.",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 232,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Find the right voice.",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1177,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From text to audio.",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1562,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good to know.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2036,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      18,
+      21,
+      24,
+      36,
+      42,
+      48
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.9
+     },
+     "measureChars": 35,
+     "max": {
+      "size": 48,
+      "vw": 6.3,
+      "font": "Switzer",
+      "text": "A voice studio.On your Mac."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafbf9",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.2,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#10151e",
+       "top": 80,
+       "hsl": {
+        "h": 219,
+        "s": 0.3,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#edf0eb",
+       "top": 1487,
+       "hsl": {
+        "h": 96,
+        "s": 0.14,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#203033",
+       "share": 0.83
+      },
+      {
+       "color": "#f4f6fa",
+       "share": 0.14
+      },
+      {
+       "color": "#10151e",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#fafbf9",
+      "hsl": {
+       "h": 90,
+       "s": 0.2,
+       "l": 0.98
+      },
+      "fg": "#203033"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 0,
+     "height": 55,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Get Sonar for Mac"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.48
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 2571,
+    "margins": {
+     "left": 38,
+     "right": 38
+    },
+    "sections": [
+     {
+      "sel": "header.app-hero",
+      "tag": "header",
+      "top": 80,
+      "height": 955,
+      "words": 37,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "A voice studio.",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 38,
+      "right": 38,
+      "textLeft": 38,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.detail-section",
+      "tag": "section",
+      "top": 1115,
+      "height": 372,
+      "words": 40,
+      "media": 1,
+      "middle": 104,
+      "heading": {
+       "text": "Find the right voice.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 63,
+      "textLeft": 38,
+      "textRight": 428,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#access.access",
+      "tag": "section",
+      "top": 1487,
+      "height": 469,
+      "words": 50,
+      "media": 0,
+      "middle": 176,
+      "heading": {
+       "text": "From text to audio.",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 39,
+      "textLeft": 38,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#questions.faq",
+      "tag": "section",
+      "top": 1956,
+      "height": 515,
+      "words": 68,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Good to know.",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 84,
+      "textLeft": 38,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "A voice studio. On your Mac.",
+      "size": 48,
+      "top": 232,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 38,
+      "n": 9
+     },
+     {
+      "x": 419,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.98,
+    0.66,
+    0.71,
+    0.58
+   ],
+   "motion": {
+    "elements": 17,
+    "css": 17,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 2794,
+     "screens": 3.3,
+     "words": 162,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "app-screenshot-dark.webp",
+      "app-screenshot-light.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "A voice studio. On your Mac.",
+     "words": 6,
+     "chars": 28,
+     "lines": 2,
+     "size": 42.1,
+     "vw": 10.8,
+     "font": "Switzer",
+     "weight": 500,
+     "tracking": -0.045,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 177,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "A voice studio. On your Mac.",
+     "words": 6,
+     "lines": 2,
+     "size": 42.1,
+     "font": "Switzer"
+    },
+    "headings": [
+     {
+      "text": "Sonar",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 116,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "A voice studio. On your Mac.",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 42.1,
+      "vw": 10.8,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 177,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Find the right voice.",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1040,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From text to audio.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1677,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good to know.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2163,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      21,
+      24,
+      36,
+      42
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.9
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 42.1,
+      "vw": 10.8,
+      "font": "Switzer",
+      "text": "A voice studio.On your Mac."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafbf9",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.2,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#10151e",
+       "top": 76,
+       "hsl": {
+        "h": 219,
+        "s": 0.3,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#edf0eb",
+       "top": 1622,
+       "hsl": {
+        "h": 96,
+        "s": 0.14,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#203033",
+       "share": 0.83
+      },
+      {
+       "color": "#f4f6fa",
+       "share": 0.14
+      },
+      {
+       "color": "#10151e",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#fafbf9",
+      "hsl": {
+       "h": 90,
+       "s": 0.2,
+       "l": 0.98
+      },
+      "fg": "#203033"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 0,
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Menu",
+      "Get Sonar for Mac"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.29
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 2794,
+    "margins": {
+     "left": 22,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "header.app-hero",
+      "tag": "header",
+      "top": 76,
+      "height": 792,
+      "words": 37,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "A voice studio.",
+       "size": 42,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.detail-section",
+      "tag": "section",
+      "top": 984,
+      "height": 637,
+      "words": 40,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Find the right voice.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 31,
+      "textLeft": 24,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#access.access",
+      "tag": "section",
+      "top": 1622,
+      "height": 462,
+      "words": 50,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From text to audio.",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 33,
+      "textLeft": 24,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#questions.faq",
+      "tag": "section",
+      "top": 2083,
+      "height": 547,
+      "words": 68,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Good to know.",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 24,
+      "textLeft": 22,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 2630,
+      "height": 164,
+      "words": 10,
+      "media": 0,
+      "middle": 102,
+      "heading": null,
+      "left": 22,
+      "right": 22,
+      "textLeft": 22,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "A voice studio. On your Mac.",
+      "size": 42,
+      "top": 177,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 22,
+      "n": 12
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/private/tmp/hippo-taste-corrected-sonar/desktop-fold.jpg",
+   "pages": [
+    "/private/tmp/hippo-taste-corrected-sonar/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/private/tmp/hippo-taste-corrected-sonar/tablet-fold.jpg",
+   "pages": [
+    "/private/tmp/hippo-taste-corrected-sonar/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/private/tmp/hippo-taste-corrected-sonar/mobile-fold.jpg",
+   "pages": [
+    "/private/tmp/hippo-taste-corrected-sonar/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

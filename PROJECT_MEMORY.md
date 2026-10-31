@@ -4,7 +4,7 @@ Last researched: 2026-10-30. This file stores durable references; current work l
 
 ## Purpose and owner preferences
 
-BigHippo Labs is a small independent software studio’s website. The owner requested a major redesign using [Leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill), with less generic AI styling, and wants visual directions to choose from before the final redesign. Show actual products and concrete benefits. Preserve app identities. Owner approved `docs/redesign/studio.html` and icon A; implement that direction.
+BigHippo Labs is a small independent software studio’s website. The owner requested a major redesign using [Leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill), with less generic AI styling, and wants visual directions to choose from before the final redesign. Show actual products and concrete benefits. Preserve app identities. Owner approved the studio structure and icon A, then selected **Warm Editorial** from `docs/redesign/theme-studies/` on 2026-10-31; use that current visual direction and retain every alternative preview.
 
 ## Owner direction — revised after concept review
 
@@ -86,3 +86,16 @@ Track SEO and AI search visibility in `project_tracker.md`. Google states no spe
 ## Live release
 
 2026-10-30: release d8d2030 deployed successfully by Pages run https://github.com/jancajas/jancajas.github.io/actions/runs/40984159774 . HTTPS byte comparison passed 11/11 resources including all three marketing pages, icon, robots/sitemap and existing legal/support routes. SEO and AI visibility audit remains pending.
+
+## Taste Skill refinement — 2026-10-31
+
+Owner chose refinement of the current design: layout, screenshots, navigation and mobile UX. Taste Skill is now the primary visual-design authority in AGENTS.md. New controls are progressively enhanced: mobile menu remains visible without JS; screenshot links open actual image files without the dialog enhancement. Product routes and legal text remain preserved. Local review build: http://127.0.0.1:8767/ . This refinement is not yet deployed.
+
+## Theme alternatives
+
+2026-10-31 owner requested three distinct takes for comparison, not just palette swaps. Studies: `docs/redesign/theme-studies/` with Quiet Studio (forest/chalk), Bold Independent (ink/cobalt), Warm Editorial (paper/espresso/blue), plus matching app pages. Owner selected **Warm Editorial**. Preserve all three previews, screenshots, CSS and direction sheets as references for later switching; do not overwrite the studies with production changes. Icon A and product separation remain fixed.
+
+Warm Editorial uses Gambarino display type, Switzer body, paper `#f4f0e7`, espresso `#3a3027`, muted blue `#465e76`, sand `#e9e1d2` and blue-gray `#e0e6e8`. Primary source: `docs/redesign/theme-studies/editorial/`; full direction `editorial-report`, seed 2075621248. Implement in production source while preserving full app content, metadata, menu and screenshot viewer. Design archive/switching guide: `docs/redesign/DESIGN_DIRECTIONS.md`. Prior refinement source is saved under `docs/redesign/taste-refinement-2026-10-31/source/`.
+
+
+Warm Editorial applied and verified locally on 2026-10-31, built preview http://127.0.0.1:8769/ . Full report: `docs/redesign/warm-editorial-2026-10-31/README.md`. Not yet pushed/deployed; live release remains `d8d2030`. All theme previews remain preserved independently from production.
