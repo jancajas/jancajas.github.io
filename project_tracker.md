@@ -1,6 +1,6 @@
 ## Branola review-support pages — 17 November 2026
 
-Owner explicitly authorized this repository and public support/privacy preparation for Branola Voice Notetaker. Added `/page-branola/`, `support.html` and `privacy.html`, with actual native sample screenshots, scoped app identity and inherited studio typography. Existing product/legal routes and unrelated working-tree files are preserved. Public support mailbox is the existing `support@bighippolabs.com`. No App Review submission or automatic public app release is authorized here. Website build/link checks and deployment verification are in progress.
+Owner explicitly authorized this repository and public support/privacy preparation for Branola Voice Notetaker. Added `/page-branola/`, `support.html` and `privacy.html`, with actual native sample screenshots, scoped app identity and inherited studio typography. Existing product/legal routes and unrelated working-tree files are preserved. Public support mailbox is the existing `support@bighippolabs.com`. No App Review submission or automatic public app release is authorized here. Static artifact/local-link/h1 checks passed; five existing legal/support routes are unchanged. Scoped commit 23049c8 was pushed to master with owner publication approval. All three public Branola pages match the prepared source over HTTPS. No cross-browser/viewport audit is claimed. App Store preparation is tracked in the Branola app repository.
 
 # BigHippo Labs project tracker
 

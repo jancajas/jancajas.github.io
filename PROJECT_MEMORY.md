@@ -103,3 +103,5 @@ Warm Editorial applied and deployed on 2026-10-31: release `0b77f693fb70d2a3b184
 ## Branola — 17 November 2026
 
 Owner authorized adding Branola support/privacy pages for App Review preparation. App source is `/Users/jan/sources/inscribe-clone`; app record ID 6806499550; selected name Branola Voice Notetaker, short brand Branola, Chalk #F6F7F2 / ink #151515 / lime #C6EB3B. Public routes: `/page-branola/`, `/page-branola/support.html`, `/page-branola/privacy.html`. Local speech transcription requires model download; Apple Intelligence is required only for new AI Summary/visuals, not the entire app. Free explicit seven-day recording trial then optional one-time lifetime access; no subscription/automatic charge. Preserve existing product identities and routes.
+
+Branola publication verified: scoped commit `23049c8` pushed to master on 17 November 2026 with explicit owner approval. HTTPS byte comparisons passed for the new landing/support/privacy pages. Existing legal/support routes were preserved. The app's final App Review Submit remains with the owner; website publication does not mean the app is released.
