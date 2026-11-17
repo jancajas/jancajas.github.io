@@ -99,3 +99,7 @@ Warm Editorial uses Gambarino display type, Switzer body, paper `#f4f0e7`, espre
 
 
 Warm Editorial applied and deployed on 2026-10-31: release `0b77f693fb70d2a3b1845505495646f17d946d3e`, Pages run https://github.com/jancajas/jancajas.github.io/actions/runs/41169751610 completed success. Live HTTPS resources match the committed build 15/15 by SHA-256. Full report: `docs/redesign/warm-editorial-2026-10-31/README.md`; live evidence: `live-verification.json` alongside it. All theme previews remain preserved in GitHub independently from production and excluded from hosting. SEO/AI visibility backlog remains open.
+
+## Branola — 17 November 2026
+
+Owner authorized adding Branola support/privacy pages for App Review preparation. App source is `/Users/jan/sources/inscribe-clone`; app record ID 6806499550; selected name Branola Voice Notetaker, short brand Branola, Chalk #F6F7F2 / ink #151515 / lime #C6EB3B. Public routes: `/page-branola/`, `/page-branola/support.html`, `/page-branola/privacy.html`. Local speech transcription requires model download; Apple Intelligence is required only for new AI Summary/visuals, not the entire app. Free explicit seven-day recording trial then optional one-time lifetime access; no subscription/automatic charge. Preserve existing product identities and routes.

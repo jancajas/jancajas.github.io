@@ -4,7 +4,7 @@ set -eu
 site_output="${1:-_site}"
 mkdir -p "$site_output"
 cp index.html "$site_output/"
-for directory in src page-ghostreader page-sonar; do
+for directory in src page-ghostreader page-sonar page-branola; do
   mkdir -p "$site_output/$directory"
   rsync -a --exclude='.DS_Store' "$directory/" "$site_output/$directory/"
 done
